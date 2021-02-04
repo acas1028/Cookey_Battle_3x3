@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Prologue.unity
+    guid: 86ae4366f4e874c4fb0436622d8dfc93
+  - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: da5ede3750a1c9145a7ecdcf043dcd99
+  - enabled: 1
+    path: Assets/Scenes/Practice Mode.unity
+    guid: c41f2a16fe9d5514782e9e40b7d6b808
+  - enabled: 1
+    path: Assets/Scenes/MainGame1.unity
+    guid: e2acb3811d257de4ebb8b79b112342d6
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 1ae2bdc7e17c081419b1a2b855719d46
+  - enabled: 1
+    path: Assets/Scenes/Stage1_ScoreEvaluation.unity
+    guid: b6bf0d4239fa3c9498fab6fb5778d5a0
+  - enabled: 1
+    path: Assets/Scenes/Stage2_ScoreEvaluation.unity
+    guid: a22e013835e961b48b06f065cc2f1f00
+  - enabled: 1
+    path: Assets/Scenes/Stage3_ScoreEvaluation.unity
+    guid: 4ed5e6975918a744d9631cc57ace4056
+  m_configObjects: {}
