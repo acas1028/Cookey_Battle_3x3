@@ -84,11 +84,11 @@ public class InputCommand : MonoBehaviour
 
 
 
-            if (comandComparison.commandName!=null)
-            {
-                Debug.Log(comandComparison.commandName);
-                comandComparison.commandName = null;
-            }
+            //if (comandComparison.commandName!=null)
+            //{
+            //    Debug.Log(comandComparison.commandName);
+            //    comandComparison.commandName = null;
+            //}
             
 
 

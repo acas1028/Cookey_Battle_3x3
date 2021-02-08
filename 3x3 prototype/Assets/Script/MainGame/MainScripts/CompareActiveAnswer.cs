@@ -275,7 +275,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 4:
                 {
-                    commandCompare.GetComponent<CommandCompare>().player_animator.SetBool("Idle", true);
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -376,7 +376,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
                     {
@@ -401,6 +407,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 8:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -466,7 +473,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 2; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
                     {
@@ -484,6 +497,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 11:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -522,7 +536,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
                     {
@@ -541,6 +561,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
             case 13:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -610,7 +631,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
                     {
@@ -628,6 +655,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 16:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     ingameStep++;
                     command_All_Count = 0;
                     making_Count = 0;
@@ -685,7 +713,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -703,6 +737,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 3:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -773,7 +808,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -791,6 +832,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 6:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -859,7 +901,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -877,6 +925,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 9:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -915,7 +964,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 9; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -933,6 +988,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 11:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -971,7 +1027,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -989,6 +1051,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 13:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1090,7 +1153,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -1108,6 +1177,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 17:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1148,7 +1218,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 9; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -1166,6 +1242,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 19:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1205,7 +1282,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 9; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -1223,6 +1306,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 21:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1262,7 +1346,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 9; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
                     {
@@ -1280,6 +1370,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 23:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1496,7 +1587,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -1514,6 +1611,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 3:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1613,7 +1711,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -1631,6 +1735,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 7:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1670,7 +1775,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -1688,6 +1799,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 9:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1787,7 +1899,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -1805,6 +1923,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 13:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1845,7 +1964,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 9; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -1863,6 +1988,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 15:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1932,7 +2058,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -1950,6 +2082,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 18:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -2082,7 +2215,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -2101,6 +2240,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
             case 23:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -2142,7 +2282,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -2161,6 +2307,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 25:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -2200,7 +2347,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -2218,6 +2371,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 27:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -2257,7 +2411,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 4; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -2275,6 +2435,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 29:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -2378,7 +2539,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -2397,6 +2564,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
             case 33:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -2438,7 +2606,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 3; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -2456,6 +2630,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 35:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -2529,7 +2704,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     }
 
-
+                    for (int i = 1; i < 6; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
                     {
@@ -2548,6 +2729,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
             case 38:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     ingameStep++;
 
                     command_All_Count = 0;

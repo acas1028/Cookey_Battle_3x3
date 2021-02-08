@@ -886,6 +886,7 @@ MonoBehaviour:
   isSoup: 1
   isSlime: 0
   isDragon: 0
+  manager_animator: 0
 --- !u!4 &357009717
 Transform:
   m_ObjectHideFlags: 0
@@ -3019,6 +3020,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wasp Tree Bark
       objectReference: {fileID: 0}
+    - target: {fileID: 567810387, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 567810387, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 567810388, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: data_GameManager
       value: 
@@ -3031,6 +3040,10 @@ PrefabInstance:
       propertyPath: count
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 567810388, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: soup_MakingIngredients
+      value: 
+      objectReference: {fileID: 831160389}
     - target: {fileID: 575240563, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Strawberry

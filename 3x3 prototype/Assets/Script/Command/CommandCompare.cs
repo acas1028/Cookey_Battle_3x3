@@ -30,9 +30,7 @@ public class CommandCompare : MonoBehaviour
 
     public bool isDragon;
 
-    
-
-
+    public int manager_animator = 0;
 
 
     public  void CommandCompare_Soup()
@@ -307,50 +305,61 @@ public class CommandCompare : MonoBehaviour
 
     public void Command_checking()
     {
-        Debug.Log(commandComparison.GetComponent<ComandComparison>().commandName);
+        //Debug.Log(commandComparison.GetComponent<ComandComparison>().commandName == "Boiling_Command");
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Cutting_Command")
         {
-            player_animator.SetBool("Cutting", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 1);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Boiling_Down_Command")
         {
-            player_animator.SetBool("Boiling_Down", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 5);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Boiling_Command")
         {
-            player_animator.SetBool("Boiling", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 2);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Chopping_Command")
         {
-            player_animator.SetBool("Chopping", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 11);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Mash_Command")
         {
-            player_animator.SetBool("Mash", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 3);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Spray_Command")
         {
-            player_animator.SetBool("Spray", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 4);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "WrapUp_Command")
         {
-            player_animator.SetBool("WrapUp", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 7);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Cut_inInsert_Command")
         {
-            player_animator.SetBool("Cut_inInsert", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 8);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Stir_Fry_Command")
         {
-            player_animator.SetBool("Stir_Fry", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 6);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Ironing_Command")
         {
-            player_animator.SetBool("Ironing", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 10);
         }
         if (commandComparison.GetComponent<ComandComparison>().commandName == "Push_Command")
         {
-            player_animator.SetBool("Push", true);
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 9);
         }
 
     }
