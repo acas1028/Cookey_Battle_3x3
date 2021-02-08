@@ -13,6 +13,7 @@ public class SoundChange : MonoBehaviour
     {
         soundVolume.value = GameManager.instance.soundVol;
         soundAudio.volume = soundVolume.value;
+        DontDestroyOnLoad(this);
     }
 
     // Update is called once per frame
@@ -30,5 +31,6 @@ public class SoundChange : MonoBehaviour
     public void PlaySound()
     {
         soundAudio.Play();
+        Destroy(this.gameObject, 1);
     }
 }
