@@ -221,9 +221,15 @@ public class CompareActiveAnswer : MonoBehaviour
                         
                     }
 
-                    
+                    for (int i = 1; i < 5; i++)
+                    {
+                        if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == i)
+                        {
+                            commandCompare.GetComponent<CommandCompare>().Command_checking();
+                        }
+                    }
 
-                    if(CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount== Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount!=0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount== Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount!=0)
                     {
                         
                         commandbar.SetActive(false);
@@ -269,6 +275,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 4:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetBool("Idle", true);
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 

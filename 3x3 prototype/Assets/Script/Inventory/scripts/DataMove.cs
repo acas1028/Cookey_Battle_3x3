@@ -75,7 +75,7 @@ public class DataMove : MonoBehaviour
     public void DataMoving()
     {
         fieldobject.GetComponent<FieldObjectScript>().SetitemList(myObject.GetComponent<DataSpace>().item_List);
-        fieldobject.GetComponent<SpriteRenderer>().sprite = movingObject.GetComponent<SpriteRenderer>().sprite;
+        //fieldobject.GetComponent<SpriteRenderer>().sprite = movingObject.GetComponent<SpriteRenderer>().sprite;
         data_GameManager.moveCount--;
         Destroy(myObject);
         Destroy(movingObject);

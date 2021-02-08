@@ -12,6 +12,8 @@ public class CommandCompare : MonoBehaviour
 
     public GameObject CompareActiveAnswer;
 
+    public Animator player_animator;
+
     public int command_Count = 0;
 
     public int field_score;
@@ -303,7 +305,55 @@ public class CommandCompare : MonoBehaviour
 
     }
 
+    public void Command_checking()
+    {
+        Debug.Log(commandComparison.GetComponent<ComandComparison>().commandName);
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Cutting_Command")
+        {
+            player_animator.SetBool("Cutting", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Boiling_Down_Command")
+        {
+            player_animator.SetBool("Boiling_Down", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Boiling_Command")
+        {
+            player_animator.SetBool("Boiling", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Chopping_Command")
+        {
+            player_animator.SetBool("Chopping", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Mash_Command")
+        {
+            player_animator.SetBool("Mash", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Spray_Command")
+        {
+            player_animator.SetBool("Spray", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "WrapUp_Command")
+        {
+            player_animator.SetBool("WrapUp", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Cut_inInsert_Command")
+        {
+            player_animator.SetBool("Cut_inInsert", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Stir_Fry_Command")
+        {
+            player_animator.SetBool("Stir_Fry", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Ironing_Command")
+        {
+            player_animator.SetBool("Ironing", true);
+        }
+        if (commandComparison.GetComponent<ComandComparison>().commandName == "Push_Command")
+        {
+            player_animator.SetBool("Push", true);
+        }
 
+    }
 
 
 
