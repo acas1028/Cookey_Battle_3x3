@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MoveCursor : MonoBehaviour
 {
-    
-    float time;
+
+    public float time;
     public float scroll_line_size;
     public float blockLine;
     public float bottom_count = 0;
@@ -77,7 +77,7 @@ public class MoveCursor : MonoBehaviour
                 TeleportScrollbar();
             }
 
-            time = 0f;
+
         }
 
 
@@ -91,10 +91,10 @@ public class MoveCursor : MonoBehaviour
             bottom_count = 0;
         }
 
-        
-        if(inventoryScript.WareHouseDestroy==1)
+
+        if (inventoryScript.WareHouseDestroy == 1)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 inventory.SetActive(false);
                 Main_Keyboard_Input.SetActive(true);
@@ -107,34 +107,38 @@ public class MoveCursor : MonoBehaviour
     void move()
     {
         Vector3 movePos = Vector3.zero;
-        if (Input.GetAxisRaw("Vertical") > 0 && blockY > 0)
-        {   // 화살표위쪽키 입력 
+        if (Input.GetKeyDown(KeyCode.UpArrow) && blockY > 0)
+        {   // 
             transform.Translate(new Vector3(0f, 1f * Y_blockSize, 0f));
             blockY--;
+            time = 0f;
         }
 
-        if (Input.GetAxisRaw("Vertical") < 0 && blockY < 1)
-        {   // 화살표밑쪽키 입력
+        if (Input.GetKeyDown(KeyCode.DownArrow) && blockY < 1)
+        {   // 
             transform.Translate(new Vector3(0f, -1f * Y_blockSize, 0f));
             blockY++;
+            time = 0f;
         }
 
-        if (Input.GetAxisRaw("Horizontal") > 0)
-        {   // 화살표오른쪽키 입력
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {   // 
             if (blockX >= 0 && blockX < 8)
             {
                 transform.Translate(new Vector3(1f * X_blockSize, 0f, 0f));
                 blockX++;
+                time = 0f;
             }
             if (blockX > 7)
             {
                 transform.Translate(new Vector3(-8f * X_blockSize, 0f, 0f));
                 blockX = 0;
+                time = 0f;
             }
         }
-        if (Input.GetAxisRaw("Horizontal") < 0)
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            // 화살표왼쪽키 입력
+            // 
             if (blockX >= -1 && blockX < 8)
             {
                 transform.Translate(new Vector3(-1f * X_blockSize, 0f, 0f));
@@ -151,13 +155,13 @@ public class MoveCursor : MonoBehaviour
 
     void moveScrollbar()
     {
-        if (Input.GetAxisRaw("Vertical") < 0 && bottom_count == 1 && blockLine >= -1)
+        if (Input.GetKeyDown(KeyCode.DownArrow) && bottom_count == 1 && blockLine >= -1)
         {
             scrollbar.transform.Translate(0, scroll_line_size, 0);
             blockLine++;
         }
 
-        if (Input.GetAxisRaw("Vertical") > 0 && bottom_count == 0 && blockLine <= 3)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && bottom_count == 0 && blockLine <= 3)
         {
             scrollbar.transform.Translate(0, -scroll_line_size, 0);
             blockLine--;
@@ -178,7 +182,7 @@ public class MoveCursor : MonoBehaviour
                     inventory_Cursor.GetComponent<MoveCursor>().blockLine++;
                     itemnotEmpty = false;
                     firstitemnotEmpty = false;
-                    if (isThisFirst < 2)// 최대 blockline-1로 설정되어있다.
+                    if (isThisFirst < 2)// blockline-1
                     {
                         isThisFirst++;
                     }
@@ -197,16 +201,16 @@ public class MoveCursor : MonoBehaviour
         }
     }
 
-        
 
-        
 
-        
-    
+
+
+
+
 
     void TeleportScrollbar()
     {
-        if (Input.GetAxisRaw("Vertical") < 0 && bottom_count == 1)
+        if (Input.GetKeyDown(KeyCode.DownArrow) && bottom_count == 1)
         {
             scrollbar.transform.Translate(0, -4f * scroll_line_size, 0);
             cursor.transform.Translate(0, 1f * Y_blockSize, 0);
@@ -214,7 +218,7 @@ public class MoveCursor : MonoBehaviour
             blockLine = 0;
         }
 
-        if (Input.GetAxisRaw("Vertical") > 0 && bottom_count == 0)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && bottom_count == 0)
         {
             scrollbar.transform.Translate(0, 4f * scroll_line_size, 0);
             cursor.transform.Translate(0, -1f * Y_blockSize, 0);
@@ -224,7 +228,7 @@ public class MoveCursor : MonoBehaviour
 
     }
 
-   
+
 
 
 }
