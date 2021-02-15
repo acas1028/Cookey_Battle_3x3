@@ -50,3 +50,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2164909607
+    locked: 0
+  - name: Other_player
+    uniqueID: 2782307935
+    locked: 0
+  - name: Another_player
+    uniqueID: 2965240431
+    locked: 0
+  - name: Other_desk
+    uniqueID: 148210327
+    locked: 0
+  - name: Black_background
+    uniqueID: 4184741807
+    locked: 0
+  - name: lighting
+    uniqueID: 2815155257
+    locked: 0
+  - name: Player
+    uniqueID: 3515607599
+    locked: 0
+  - name: Desk
+    uniqueID: 4012485387
+    locked: 0

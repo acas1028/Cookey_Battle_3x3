@@ -30,8 +30,6 @@ public class CommandCompare : MonoBehaviour
 
     public bool isDragon;
 
-    public int manager_animator = 0;
-
 
     public  void CommandCompare_Soup()
     {

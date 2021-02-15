@@ -68,6 +68,8 @@ public class CompareActiveAnswer : MonoBehaviour
 
     public bool isInventoryOk = false;
 
+    public bool anim_call = false;
+
 
     int ingameStage;
     int ingameStep;
@@ -151,6 +153,7 @@ public class CompareActiveAnswer : MonoBehaviour
         {
             case 1:
                 {
+                    anim_call = true;
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
                         
@@ -690,6 +693,7 @@ public class CompareActiveAnswer : MonoBehaviour
         {
             case 1:
                 {
+                    anim_call = true;
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
@@ -1570,7 +1574,7 @@ public class CompareActiveAnswer : MonoBehaviour
         {
             case 1:
                 {
-
+                    anim_call = true;
                     for (int j = 0; j < basic_instance.Count; j++)
                     {
 
