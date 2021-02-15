@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class InputUserName : MonoBehaviour
 {
     public InputField inputField;
+
+    public GameObject checkNameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +25,7 @@ public class InputUserName : MonoBehaviour
         GameManager.instance.SetUserName(inputField.text);
         Debug.Log(GameManager.instance.GetUserName());
         PlayerPrefs.SetString("Name", inputField.text);
+
+        checkNameObject.SetActive(true);
     }
 }

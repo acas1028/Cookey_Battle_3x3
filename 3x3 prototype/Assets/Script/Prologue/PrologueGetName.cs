@@ -15,6 +15,6 @@ public class PrologueGetName : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        uiText.text = "'" + GameManager.instance.GetUserName() + "' 으로";
+        uiText.text = "'" + GameManager.instance.GetUserName() + "' 으로 \n 신청하시겠습니까?";
     }
 }
