@@ -44,4 +44,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/True Ending.unity
     guid: b18b44721e7f67a4a9d04cb081645fab
+  - enabled: 1
+    path: Assets/Scenes/Practice Mode_Dragon Wallton.unity
+    guid: 023c872847ed6024bbe89e893e73afa0
+  - enabled: 1
+    path: Assets/Scenes/Practice Mode_Slime Salad.unity
+    guid: 1a954b3b764cf2c43bbf7a2bd8ad00a1
+  - enabled: 1
+    path: Assets/Scenes/Practice Mode_Space Soup.unity
+    guid: 754dff41361149441acdd8963da90c33
   m_configObjects: {}
