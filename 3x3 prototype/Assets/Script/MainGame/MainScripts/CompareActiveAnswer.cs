@@ -38,7 +38,11 @@ public class CompareActiveAnswer : MonoBehaviour
 
     public GameObject[] Making_Ingredients;
 
+    public GameObject[] hiddenMaking_Ingredients;
+
     public GameObject[] Making_Ingredients_Moving;
+
+    public GameObject[] hiddenMaking_Ingredients_Moving;
 
     public GameObject[] InventorySlot;
 
@@ -50,9 +54,15 @@ public class CompareActiveAnswer : MonoBehaviour
 
     public int making_Count = 0;
 
+    public int hiddentmaking_Count = 0;
+
     public int score_compare_cal = 0;
 
     public int command_All_Count = 0;
+
+    public int isHiddentCount = 0;
+
+    public int hiddentIngredientCount = 0;
 
     public Item_list item_List;
 
@@ -69,6 +79,8 @@ public class CompareActiveAnswer : MonoBehaviour
     public bool isInventoryOk = false;
 
     public bool anim_call = false;
+
+    public bool isComplete = false;
 
 
     int ingameStage;
@@ -334,8 +346,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -464,8 +478,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -524,11 +540,13 @@ public class CompareActiveAnswer : MonoBehaviour
                             {
                                 if (basic_instance[i].activeSelf == true)
                                 {
-
+                                    isHiddentCount = 0;
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -566,7 +584,16 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if(isHiddentCount==1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -623,8 +650,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -662,8 +691,10 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
+                        isComplete = true;
                         Making_ingredient();
                         isInventoryOk = true;
+                        isComplete = false;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
@@ -677,8 +708,10 @@ public class CompareActiveAnswer : MonoBehaviour
                     ingameStep++;
                     command_All_Count = 0;
                     making_Count = 0;
+                    hiddentIngredientCount = 0;
+                    hiddentmaking_Count = 0;
+                    //hidden으로 가는 법?
 
-                    
 
                     gameFinishObject.SetActive(true);
                 }
@@ -707,8 +740,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -746,7 +781,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -771,8 +816,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -842,7 +889,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -867,8 +924,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -897,8 +956,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -936,7 +997,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 2)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -961,8 +1032,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1000,7 +1073,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -1119,8 +1202,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1191,7 +1276,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -1321,8 +1416,8 @@ public class CompareActiveAnswer : MonoBehaviour
 
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
-                        CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;                       
+                        Making_ingredient();                     
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -1347,8 +1442,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1387,7 +1484,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -1473,8 +1580,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1505,8 +1614,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1535,8 +1646,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1553,10 +1666,13 @@ public class CompareActiveAnswer : MonoBehaviour
                 break;
             case 28:
                 {
+                    commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     ingameStep++;
-
                     command_All_Count = 0;
                     making_Count = 0;
+                    hiddentIngredientCount = 0;
+                    //hidden으로 가는 법?
+
 
                     gameFinishObject.SetActive(true);
                 }
@@ -1779,8 +1895,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1819,7 +1937,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -1844,8 +1972,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1874,8 +2004,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -1944,7 +2076,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 2)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -1969,8 +2111,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -2010,7 +2154,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -2065,8 +2219,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -2105,7 +2261,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -2192,8 +2358,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -2223,8 +2391,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -2263,7 +2433,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 2)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -2357,8 +2537,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -2397,7 +2579,17 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        if (isHiddentCount == 0)
+                        {
+                            Making_ingredient();
+                        }
+
+                        else if (isHiddentCount == 1)
+                        {
+                            HiddentMaking_Ingredient();
+                            isHiddentCount = 0;
+                            making_Count++;
+                        }
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -2518,8 +2710,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -2591,7 +2785,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
-                        Making_ingredient();
+                        Making_ingredient();                                       
                         isInventoryOk = true;
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
@@ -2716,8 +2910,10 @@ public class CompareActiveAnswer : MonoBehaviour
 
                                     compare_score = basic_instance[i];
                                     compare_score.GetComponent<DataMove>().Name_Compare();
+                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
                                     ingameStep++;
                                     Ingredient_Count++;
+                                    hiddentIngredientCount++;
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);
@@ -2772,9 +2968,11 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     commandCompare.GetComponent<CommandCompare>().player_animator.SetInteger("States", 0);
                     ingameStep++;
-
                     command_All_Count = 0;
                     making_Count = 0;
+                    hiddentIngredientCount = 0;
+                    //hidden으로 가는 법?
+
 
                     gameFinishObject.SetActive(true);
                 }
@@ -2808,6 +3006,11 @@ public class CompareActiveAnswer : MonoBehaviour
         return hiddenCount;
     }
 
+    public void SetHiddentCount(int count)
+    {
+        hiddenCount = count;
+    }
+
     public void Making_ingredient()
     {
         Making_Ingredients[making_Count].transform.SetParent(InventorySlot[dataGameManager.GetComponent<Data_GameManager>().moveCount].transform);
@@ -2820,11 +3023,36 @@ public class CompareActiveAnswer : MonoBehaviour
         Making_Ingredients_Moving[making_Count].GetComponent<DataMove>().enabled = true;
         basic_instance.Add(Making_Ingredients_Moving[making_Count]);
         dataGameManager.GetComponent<Data_GameManager>().moveCount++;
-        ShowMakingIngredient.GetComponent<Image>().sprite = Making_Ingredients[making_Count].GetComponent<Image>().sprite;
+        if (isComplete == false)
+        {
+            ShowMakingIngredient.GetComponent<Image>().sprite = Making_Ingredients[making_Count].GetComponent<Image>().sprite;
+            ShowMakingIngredient.SetActive(true);
+            block.SetActive(true);
+        }
+
+        making_Count++;
+    }
+
+    public void HiddentMaking_Ingredient()
+    {
+        
+        hiddenMaking_Ingredients[hiddentmaking_Count].transform.SetParent(InventorySlot[dataGameManager.GetComponent<Data_GameManager>().moveCount].transform);
+        hiddenMaking_Ingredients[hiddentmaking_Count].transform.position = InventorySlot[dataGameManager.GetComponent<Data_GameManager>().moveCount].transform.position;
+        hiddenMaking_Ingredients[hiddentmaking_Count].transform.localScale = new Vector3(0.8f, 0.8f, 0);
+        hiddenMaking_Ingredients_Moving[hiddentmaking_Count].transform.SetParent(InventorySlot[dataGameManager.GetComponent<Data_GameManager>().moveCount].transform);
+        hiddenMaking_Ingredients_Moving[hiddentmaking_Count].transform.position = InventorySlot[dataGameManager.GetComponent<Data_GameManager>().moveCount].transform.position;
+        hiddenMaking_Ingredients_Moving[hiddentmaking_Count].transform.localScale = new Vector3(0.8f, 0.8f, 0);
+        hiddenMaking_Ingredients_Moving[hiddentmaking_Count].GetComponent<WareHouseDataMove>().enabled = false;
+        hiddenMaking_Ingredients_Moving[hiddentmaking_Count].GetComponent<DataMove>().enabled = true;
+        basic_instance.Add(hiddenMaking_Ingredients_Moving[hiddentmaking_Count]);
+        dataGameManager.GetComponent<Data_GameManager>().moveCount++;
+        Debug.Log(ShowMakingIngredient.GetComponent<Image>().sprite);
+        Debug.Log(hiddenMaking_Ingredients[hiddentmaking_Count].GetComponent<Image>().sprite);
+        ShowMakingIngredient.GetComponent<Image>().sprite = hiddenMaking_Ingredients[hiddentmaking_Count].GetComponent<Image>().sprite;
         ShowMakingIngredient.SetActive(true);
         block.SetActive(true);
 
-        making_Count++;
+        hiddentmaking_Count++;
     }
 
 }

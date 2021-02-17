@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     private bool stage3Clear;
     private bool stage3HiddenClear;
 
+    private bool TutorialClear;
+
     private int stage1State; // 스테이지 클리어판별 저장변수
     private int stage2State; // 0 none클리어 1 노말클리어 2 히든클리어 3 히든 퍼펙트클리어
     private int stage3State;
@@ -89,6 +91,7 @@ public class GameManager : MonoBehaviour
         stage1HiddenClear = false;
         stage2HiddenClear = false;
         stage3HiddenClear = false;
+        TutorialClear = false;
         stage1Try = false;
         stage2Try = false;
         stage3Try = false;
@@ -204,6 +207,11 @@ public class GameManager : MonoBehaviour
         return stage3HiddenClear;
     }
 
+    public bool GetTutorialClear()
+    {
+        return TutorialClear;
+    }
+
     public void SetStage1Clear(bool isClear)
     {
         stage1Clear = isClear;
@@ -228,6 +236,11 @@ public class GameManager : MonoBehaviour
     public void SetStage3HiddenClear(bool isClear)
     {
         stage3HiddenClear = isClear;
+    }
+
+    public void SetTutorialClear(bool isClear)
+    {
+        TutorialClear = isClear;
     }
 
     public void SetStage1Score(int Score)

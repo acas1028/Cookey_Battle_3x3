@@ -21,6 +21,12 @@ public class DataMove : MonoBehaviour
 
     public GameObject Dragon;
 
+    public GameObject hiddenSoup;
+
+    public GameObject hiddenSlime;
+
+    public GameObject hiddenDragon;
+
     public GameObject ingame_step_object;
 
     public GameObject fieldobject;
@@ -28,6 +34,8 @@ public class DataMove : MonoBehaviour
     public int ingame_step;
 
     public int field_score;
+
+    public int hiddentCount;
 
     public bool space_onoff = false;
 
@@ -75,7 +83,7 @@ public class DataMove : MonoBehaviour
     public void DataMoving()
     {
         fieldobject.GetComponent<FieldObjectScript>().SetitemList(myObject.GetComponent<DataSpace>().item_List);
-        //fieldobject.GetComponent<SpriteRenderer>().sprite = movingObject.GetComponent<SpriteRenderer>().sprite;
+        //fieldobject.GetComponent<SpriteRenderer>().sprite = myObject.GetComponent<Image>().sprite;
         data_GameManager.moveCount--;
         Destroy(myObject);
         Destroy(movingObject);
@@ -135,6 +143,72 @@ public class DataMove : MonoBehaviour
             }
             
         }
+
+    }
+
+    public void Hidden_Name_Comapare()
+    {
+        if(issoup== true)
+        {
+            Debug.Log(hiddenSoup.GetComponent<Soup_DataBase>().GetItemName(ingame_step_object.GetComponent<CompareActiveAnswer>().hiddentIngredientCount));
+            Debug.Log(myObject.GetComponent<DataSpace>().item_List.Name);
+           if(hiddenSoup.GetComponent<Soup_DataBase>().GetItemName(ingame_step_object.GetComponent<CompareActiveAnswer>().hiddentIngredientCount)== myObject.GetComponent<DataSpace>().item_List.Name)
+            {
+                
+                fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((fieldobject.GetComponent<FieldObjectScript>().fieldScore + myObject.GetComponent<DataSpace>().item_List.score));
+                hiddentCount++;
+                ingame_step_object.GetComponent<CompareActiveAnswer>().SetHiddentCount(hiddentCount);
+                ingame_step_object.GetComponent<CompareActiveAnswer>().isHiddentCount++;
+
+
+            }
+
+            else
+            {
+                fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((fieldobject.GetComponent<FieldObjectScript>().fieldScore + 0));
+            }
+        }
+
+        if (isslime == true)
+        {
+
+            if (hiddenSlime.GetComponent<SlimeDatabase>().GetItemName(ingame_step_object.GetComponent<CompareActiveAnswer>().hiddentIngredientCount) == myObject.GetComponent<DataSpace>().item_List.Name)
+            {
+
+                fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((fieldobject.GetComponent<FieldObjectScript>().fieldScore + myObject.GetComponent<DataSpace>().item_List.score));
+                hiddentCount++;
+                ingame_step_object.GetComponent<CompareActiveAnswer>().SetHiddentCount(hiddentCount);
+                ingame_step_object.GetComponent<CompareActiveAnswer>().isHiddentCount++;
+
+            }
+            else
+            {
+                fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((fieldobject.GetComponent<FieldObjectScript>().fieldScore + 0));
+            }
+        }
+
+        if (isDragon == true)
+        {
+            Debug.Log(hiddenDragon.GetComponent<Dragon_Database>().GetItemName(ingame_step_object.GetComponent<CompareActiveAnswer>().hiddentIngredientCount));
+            Debug.Log(myObject.GetComponent<DataSpace>().item_List.Name);
+            if (hiddenDragon.GetComponent<Dragon_Database>().GetItemName(ingame_step_object.GetComponent<CompareActiveAnswer>().hiddentIngredientCount) == myObject.GetComponent<DataSpace>().item_List.Name)
+            {
+
+                fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((fieldobject.GetComponent<FieldObjectScript>().fieldScore + myObject.GetComponent<DataSpace>().item_List.score));
+                hiddentCount++;
+                ingame_step_object.GetComponent<CompareActiveAnswer>().SetHiddentCount(hiddentCount);
+                ingame_step_object.GetComponent<CompareActiveAnswer>().isHiddentCount++;
+
+            }
+            else
+            {
+
+                fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((fieldobject.GetComponent<FieldObjectScript>().fieldScore + 0));
+            }
+
+        }
+
+
 
     }
 }
