@@ -290,10 +290,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 111358373}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &111358376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,13 +325,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 14
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &174907527
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,10 +390,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 174907527}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &174907530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,13 +425,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 17
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &211238562
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,10 +490,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 211238562}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &211238565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,13 +525,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 16
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &228683649
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,10 +590,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 228683649}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &228683652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,13 +625,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 22
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &360837268
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,10 +690,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 360837268}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &360837271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,13 +725,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 3
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &518363127
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,10 +790,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 518363127}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &518363130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,13 +825,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 15
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &538017966
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,10 +890,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 538017966}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &538017969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,13 +925,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 8
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &564509546
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,10 +990,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 564509546}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &564509549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,13 +1025,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 18
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &620354325
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,10 +1090,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 620354325}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &620354328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,13 +1125,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 5
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,10 +1282,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 781674778}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &781674781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1066,13 +1317,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 10
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &784077015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,10 +1382,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 784077015}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &784077018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,13 +1417,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 31
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &913652337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,10 +1482,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 913652337}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &913652340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1214,13 +1517,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 29
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &950522834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,10 +1644,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 953926984}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &953926987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,13 +1679,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 11
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,10 +1827,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 964457571}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &964457574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,13 +1862,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 28
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &984814966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,10 +1927,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 984814966}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &984814969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,13 +1962,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 25
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &999422622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,10 +2027,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 999422622}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &999422625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,13 +2062,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 30
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &1005224123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,10 +2127,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1005224123}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &1005224126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1729,13 +2162,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 6
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &1184361835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,10 +2227,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1184361835}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &1184361838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1803,13 +2262,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 13
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &1230278047 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6540525104565540724, guid: 554f8367da35f574491fa1030f86d756,
@@ -1871,10 +2339,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1234740676}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &1234740679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1889,13 +2374,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 12
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &1307498063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,10 +2439,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1307498063}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &1307498066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1963,13 +2474,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 24
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &1335853291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,10 +2539,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1335853291}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &1335853294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,13 +2574,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 4
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &1346054081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6540525102845513287, guid: 554f8367da35f574491fa1030f86d756,
@@ -2099,10 +2645,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1379578285}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &1379578288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2117,13 +2680,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 23
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &1393131728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,10 +2745,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1393131728}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &1393131731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,13 +2780,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 27
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!114 &1603651292 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8213698967290011346, guid: 1375f69299201c945834a66366c377de,
@@ -2243,6 +2841,9 @@ MonoBehaviour:
   inventoryCursor: {fileID: 1346054081}
   databaseObject: []
   isUsingCursor: 0
+  slots: []
+  wareHouseSlots: []
+  moveCursor: {fileID: 0}
 --- !u!4 &1647808731
 Transform:
   m_ObjectHideFlags: 0
@@ -2306,10 +2907,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1840736788}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &1840736791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2324,13 +2942,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 26
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &1968283689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,13 +3009,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 1
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!114 &1968283692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,10 +3037,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 1968283689}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!1 &2032825533
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,13 +3109,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 0
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!114 &2032825536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2475,10 +3137,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 2032825533}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!1 &2047485636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,10 +3207,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 2047485636}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &2047485639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2546,13 +3242,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 19
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &2062741237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,10 +3307,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 2062741237}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &2062741240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2620,13 +3342,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 21
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &2102271039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2676,10 +3407,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 2102271039}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &2102271042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2694,13 +3442,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 9
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &2103900101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,10 +3507,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 2103900101}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &2103900104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2768,13 +3542,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 7
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &2125501603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,10 +3607,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 2125501603}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &2125501606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2842,13 +3642,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 20
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1 &2146715500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,10 +3707,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7836f0239c562458c26d20c6ef0f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventorySlot: []
+  Field: {fileID: 0}
   data_GameManager: {fileID: 0}
   myObject: {fileID: 2146715500}
   movingObject: {fileID: 0}
+  objectScript: {fileID: 0}
+  soup: {fileID: 0}
+  Slime: {fileID: 0}
+  Dragon: {fileID: 0}
+  hiddenSoup: {fileID: 0}
+  hiddenSlime: {fileID: 0}
+  hiddenDragon: {fileID: 0}
+  ingame_step_object: {fileID: 0}
+  fieldobject: {fileID: 0}
+  ingame_step: 0
+  field_score: 0
+  hiddentCount: 0
+  space_onoff: 0
+  isinventorystart: 0
+  issoup: 0
+  isslime: 0
+  isDragon: 0
 --- !u!114 &2146715503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2916,13 +3742,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_GameManager: {fileID: 1603651292}
   dataMoving: {fileID: 0}
+  soup_MakingIngredients: {fileID: 0}
   count: 2
   item_List:
     Type: 
     Name: 
     Explanation: 
-    isUsing: 0
+    score: 0
+  SoupMakingIngredient:
+    Type: 
+    Name: 
+    Score: 
+    Explanation: 
+    score: 0
   dataMovingCount: 0
+  isMakingIngredinet: 0
+  wareHouseInventoryScript: {fileID: 0}
 --- !u!1001 &6540525103379372779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2930,6 +3765,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5896011}
     m_Modifications:
+    - target: {fileID: 541088538124201521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541088538124201521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541088538124201521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541088538124201521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541088538124201521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541088538124201521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132835869689138902, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132835869689138902, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132835869689138902, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132835869689138902, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132835869689138902, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132835869689138902, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3611487501406517947, guid: 554f8367da35f574491fa1030f86d756,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -3886,6 +4781,156 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3611487503542843573, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615874326308011205, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615874326308011205, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615874326308011205, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615874326308011205, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615874326308011205, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615874326308011205, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311019264576002857, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311019264576002857, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311019264576002857, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311019264576002857, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311019264576002857, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311019264576002857, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654289141867811509, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654289141867811509, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654289141867811509, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654289141867811509, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654289141867811509, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654289141867811509, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305674754471207391, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305674754471207391, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305674754471207391, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305674754471207391, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305674754471207391, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305674754471207391, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535401434668747821, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535401434668747821, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535401434668747821, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535401434668747821, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535401434668747821, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535401434668747821, guid: 554f8367da35f574491fa1030f86d756,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -3970,6 +5015,36 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7582229905516741521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582229905516741521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582229905516741521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582229905516741521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582229905516741521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582229905516741521, guid: 554f8367da35f574491fa1030f86d756,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 554f8367da35f574491fa1030f86d756, type: 3}
 --- !u!1001 &6934117809072029749
@@ -4039,6 +5114,36 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1177277925608717565, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177277925608717565, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177277925608717565, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177277925608717565, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177277925608717565, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177277925608717565, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1549706678373670666, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -4095,6 +5200,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1669131066291569748, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713033509948401486, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713033509948401486, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713033509948401486, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713033509948401486, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713033509948401486, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713033509948401486, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -4599,6 +5734,36 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2879510798503975287, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879510798503975287, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879510798503975287, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879510798503975287, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879510798503975287, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879510798503975287, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3116893227627629714, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -4685,6 +5850,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3272718913587700261, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408041686550989943, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408041686550989943, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408041686550989943, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408041686550989943, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408041686550989943, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3408041686550989943, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -4885,6 +6080,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5039417469023253643, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147533849825741909, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147533849825741909, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147533849825741909, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147533849825741909, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147533849825741909, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147533849825741909, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -5299,6 +6524,36 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7380318043471241301, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380318043471241301, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380318043471241301, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380318043471241301, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380318043471241301, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380318043471241301, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7579204655591178297, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -5385,6 +6640,66 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8095795781147872879, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138979826207665320, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138979826207665320, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138979826207665320, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138979826207665320, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138979826207665320, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138979826207665320, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673000486494450175, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673000486494450175, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673000486494450175, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673000486494450175, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673000486494450175, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673000486494450175, guid: cb2b19911d4e2aa42a65d7fc1aeb4b57,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0

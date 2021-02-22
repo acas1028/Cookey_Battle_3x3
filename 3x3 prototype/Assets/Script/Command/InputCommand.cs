@@ -12,6 +12,15 @@ public class InputCommand : MonoBehaviour
 
     public GameObject commandCount;
 
+    public GameObject compareactive;
+
+    public bool answer_manager = false;
+
+    public int timer;
+
+    public bool clear_command = false;
+
+
 
     int count = 1;
 
@@ -20,65 +29,106 @@ public class InputCommand : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && count < 11)
+        if(CommandCompare.GetComponent<CommandCompare>().timer_manager == true)
         {
-            calculationCommand.Commands.Add(KeyCode.UpArrow);
-            command.Spawn(command.Spawnposition(count), KeyCode.UpArrow);
-
-
-            count += 1;
-
+            timer += 1;
         }
 
-        else if (Input.GetKeyDown(KeyCode.RightArrow) && count < 11)
+        if(timer > 200)
         {
-            calculationCommand.Commands.Add(KeyCode.RightArrow);
-            command.Spawn(command.Spawnposition(count), KeyCode.RightArrow);
-
-
-            count += 1;
-
+            CommandCompare.GetComponent<CommandCompare>().correct_answer.SetActive(false);
+            CommandCompare.GetComponent<CommandCompare>().incorrect_answer.SetActive(false);
+            answer_manager = true;
         }
 
-        else if (Input.GetKeyDown(KeyCode.DownArrow) && count < 11)
+        if(answer_manager == true)
         {
-            calculationCommand.Commands.Add(KeyCode.DownArrow);
-            command.Spawn(command.Spawnposition(count), KeyCode.DownArrow);
-
-
-            count += 1;
-
-        }
-
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) && count < 11)
-        {
-            calculationCommand.Commands.Add(KeyCode.LeftArrow);
-            command.Spawn(command.Spawnposition(count), KeyCode.LeftArrow);
-
-
-            count += 1;
-
-        }
-
-        else if(Input.GetKeyDown(KeyCode.Space))
-        {
-           
-            
-            comandComparison.Comparison();
-            if (commandCount.GetComponent<CommandCount>().isSoup == true)
+            calculationCommand.Commands.Clear();
+            for (int i = 0; i < command.commandList.Count; i++)
             {
-                CommandCompare.GetComponent<CommandCompare>().CommandCompare_Soup();
+                Destroy(command.commandList[i]);
+            }
+            command.commandList.Clear();
+            count = 1;
+            answer_manager = false;
+            CommandCompare.GetComponent<CommandCompare>().timer_manager = false;
+            timer = 0;
+            CommandCompare.GetComponent<CommandCompare>().command_limit = false;
+            if(CommandCompare.GetComponent<CommandCompare>().isSoup == true)
+            {
+                if (compareactive.GetComponent<CompareActiveAnswer>().CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == compareactive.GetComponent<CompareActiveAnswer>().Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && compareactive.GetComponent<CompareActiveAnswer>().Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
+                {
+                    clear_command = true;
+                }
+            }
+            if (CommandCompare.GetComponent<CommandCompare>().isSlime == true)
+            {
+                if (compareactive.GetComponent<CompareActiveAnswer>().CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == compareactive.GetComponent<CompareActiveAnswer>().Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && compareactive.GetComponent<CompareActiveAnswer>().Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                {
+                    clear_command = true;
+                }
+            }
+            if (CommandCompare.GetComponent<CommandCompare>().isDragon == true)
+            {
+                if (compareactive.GetComponent<CompareActiveAnswer>().CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == compareactive.GetComponent<CompareActiveAnswer>().Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && compareactive.GetComponent<CompareActiveAnswer>().Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                {
+                    clear_command = true;
+                }
+            }
+        }
+
+        if (CommandCompare.GetComponent<CommandCompare>().command_limit == false)
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow) && count < 11)
+            {
+                calculationCommand.Commands.Add(KeyCode.UpArrow);
+                command.Spawn(command.Spawnposition(count), KeyCode.UpArrow);
+                count += 1;
             }
 
-            if( commandCount.GetComponent<CommandCount>().isSlime == true)
+            else if (Input.GetKeyDown(KeyCode.RightArrow) && count < 11)
             {
-                CommandCompare.GetComponent<CommandCompare>().CommandCompare_Slime();
+                calculationCommand.Commands.Add(KeyCode.RightArrow);
+                command.Spawn(command.Spawnposition(count), KeyCode.RightArrow);
+                count += 1;
             }
 
-            if(commandCount.GetComponent<CommandCount>().isDragon == true)
+            else if (Input.GetKeyDown(KeyCode.DownArrow) && count < 11)
             {
-                CommandCompare.GetComponent<CommandCompare>().CommandCompare_Dragon();
+                calculationCommand.Commands.Add(KeyCode.DownArrow);
+                command.Spawn(command.Spawnposition(count), KeyCode.DownArrow);
+                count += 1;
             }
+
+            else if (Input.GetKeyDown(KeyCode.LeftArrow) && count < 11)
+            {
+                calculationCommand.Commands.Add(KeyCode.LeftArrow);
+                command.Spawn(command.Spawnposition(count), KeyCode.LeftArrow);
+                count += 1;
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                comandComparison.Comparison();
+                if (commandCount.GetComponent<CommandCount>().isSoup == true)
+                {
+                    CommandCompare.GetComponent<CommandCompare>().CommandCompare_Soup();
+                }
+                if (commandCount.GetComponent<CommandCount>().isSlime == true)
+                {
+                    CommandCompare.GetComponent<CommandCompare>().CommandCompare_Slime();
+                }
+
+                if (commandCount.GetComponent<CommandCount>().isDragon == true)
+                {
+                    CommandCompare.GetComponent<CommandCompare>().CommandCompare_Dragon();
+                }
+            }
+
+        }
+        
+
+        
 
 
 
@@ -89,21 +139,12 @@ public class InputCommand : MonoBehaviour
             //    Debug.Log(comandComparison.commandName);
             //    comandComparison.commandName = null;
             //}
-            
 
 
-            calculationCommand.Commands.Clear();
-            for(int i=0; i<command.commandList.Count;i++)
-            {
-                Destroy(command.commandList[i]);
-            }
-            command.commandList.Clear();
 
-            count = 1;
 
-            
-        }
 
-    }
+     }
+
 
 }

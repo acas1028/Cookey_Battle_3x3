@@ -50,6 +50,8 @@ public class CompareActiveAnswer : MonoBehaviour
 
     public GameObject maingame_inventory;
 
+    public GameObject command_manager;
+
     public int Ingredient_Count = 0;
 
     public int making_Count = 0;
@@ -81,6 +83,7 @@ public class CompareActiveAnswer : MonoBehaviour
     public bool anim_call = false;
 
     public bool isComplete = false;
+
 
 
     int ingameStage;
@@ -254,7 +257,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount== Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount!=0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -265,6 +268,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
 
                     }
 
@@ -412,7 +416,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -423,7 +427,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
 
                     if (Input.GetKeyDown(KeyCode.Alpha7))
@@ -512,7 +516,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -523,7 +527,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -578,7 +582,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -598,7 +602,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -685,7 +689,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -698,7 +702,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -775,7 +779,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -796,7 +800,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -883,7 +887,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -904,7 +908,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -991,7 +995,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1012,7 +1016,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1067,7 +1071,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1088,7 +1092,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1141,7 +1145,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1152,7 +1156,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1270,7 +1274,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1291,7 +1295,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1346,7 +1350,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1357,7 +1361,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1411,7 +1415,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1422,7 +1426,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1478,7 +1482,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1499,7 +1503,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1739,7 +1743,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1750,7 +1754,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1864,7 +1868,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1875,7 +1879,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -1931,7 +1935,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -1952,7 +1956,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2070,7 +2074,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2091,7 +2095,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2148,7 +2152,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2169,7 +2173,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2255,7 +2259,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2276,7 +2280,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2427,7 +2431,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2448,7 +2452,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2505,7 +2509,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2516,7 +2520,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
 
                 }
@@ -2573,7 +2577,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2594,7 +2598,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2648,7 +2652,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2659,7 +2663,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2779,7 +2783,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2790,7 +2794,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2847,7 +2851,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2858,7 +2862,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;
@@ -2948,7 +2952,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         }
                     }
 
-                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0)
+                    if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
 
                         commandbar.SetActive(false);
@@ -2959,7 +2963,7 @@ public class CompareActiveAnswer : MonoBehaviour
                         timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
-
+                        command_manager.GetComponent<InputCommand>().clear_command = false;
                     }
                 }
                 break;

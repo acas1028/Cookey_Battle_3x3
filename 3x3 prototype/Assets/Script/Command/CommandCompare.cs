@@ -12,6 +12,16 @@ public class CommandCompare : MonoBehaviour
 
     public GameObject CompareActiveAnswer;
 
+    public GameObject correct_answer;
+
+    public GameObject incorrect_answer;
+
+    public GameObject input_command;
+
+    public bool timer_manager = false;
+
+    public bool command_limit = false;
+
     public Animator player_animator;
 
     public int command_Count = 0;
@@ -39,8 +49,10 @@ public class CommandCompare : MonoBehaviour
         {
             
             command_Score += 100;
-            
-           
+            correct_answer.SetActive(true);
+            timer_manager = true;
+            command_limit = true;
+            input_command.GetComponent<InputCommand>().timer = 0;
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 100)/2 );
             
             
@@ -49,7 +61,10 @@ public class CommandCompare : MonoBehaviour
         {
             command_Score += 0;
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 0)/2 );
-
+            incorrect_answer.SetActive(true);
+            timer_manager = true;
+            command_limit = true;
+            input_command.GetComponent<InputCommand>().timer = 0;
         }
 
         
@@ -61,7 +76,10 @@ public class CommandCompare : MonoBehaviour
         {
 
             command_Score += 100;
-
+            correct_answer.SetActive(true);
+            timer_manager = true;
+            command_limit = true;
+            input_command.GetComponent<InputCommand>().timer = 0;
 
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 100)/2 );
 
@@ -71,7 +89,11 @@ public class CommandCompare : MonoBehaviour
         {
             command_Score += 0;
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 0)/2 );
-
+            command_Score += 0;
+            incorrect_answer.SetActive(true);
+            timer_manager = true;
+            command_limit = true;
+            input_command.GetComponent<InputCommand>().timer = 0;
         }
     }
 
@@ -81,7 +103,10 @@ public class CommandCompare : MonoBehaviour
         {
 
             command_Score += 100;
-
+            correct_answer.SetActive(true);
+            timer_manager = true;
+            command_limit = true;
+            input_command.GetComponent<InputCommand>().timer = 0;
 
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 100)/2 );
 
@@ -91,7 +116,10 @@ public class CommandCompare : MonoBehaviour
         {
             command_Score += 0;
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 0)/2 );
-
+            incorrect_answer.SetActive(true);
+            timer_manager = true;
+            command_limit = true;
+            input_command.GetComponent<InputCommand>().timer = 0;
         }
     }
 

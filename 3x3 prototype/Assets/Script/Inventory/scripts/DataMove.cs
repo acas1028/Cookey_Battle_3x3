@@ -189,8 +189,6 @@ public class DataMove : MonoBehaviour
 
         if (isDragon == true)
         {
-            Debug.Log(hiddenDragon.GetComponent<Dragon_Database>().GetItemName(ingame_step_object.GetComponent<CompareActiveAnswer>().hiddentIngredientCount));
-            Debug.Log(myObject.GetComponent<DataSpace>().item_List.Name);
             if (hiddenDragon.GetComponent<Dragon_Database>().GetItemName(ingame_step_object.GetComponent<CompareActiveAnswer>().hiddentIngredientCount) == myObject.GetComponent<DataSpace>().item_List.Name)
             {
 
