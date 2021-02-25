@@ -51,7 +51,7 @@ public class ComandComparison : MonoBehaviour
             {
                 if (i == calculationCommand.Commands.Count - 1 && calculationCommand.Commands[i] == commandCollection.CuttingCommand[i])
                 {
-                    commandName = "Cutting_Command";
+                    commandName = "Cutting_Command"; 
                 }
             }
           
@@ -273,12 +273,14 @@ public class ComandComparison : MonoBehaviour
         {
             if (calculationCommand.Commands.Count > CommandsAnswer.Count)
             {
+                commandName = null;
                 CommandComparisonCount += 1;
                 break;
             }
 
             if (calculationCommand.Commands[i]!=CommandsAnswer[i])
             {
+                commandName = null;
                 CommandComparisonCount += 1;
                 break;
             }

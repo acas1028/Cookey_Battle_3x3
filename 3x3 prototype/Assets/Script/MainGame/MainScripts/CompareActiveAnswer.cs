@@ -2913,11 +2913,9 @@ public class CompareActiveAnswer : MonoBehaviour
                                 {
 
                                     compare_score = basic_instance[i];
-                                    compare_score.GetComponent<DataMove>().Name_Compare();
-                                    compare_score.GetComponent<DataMove>().Hidden_Name_Comapare();
+                                    compare_score.GetComponent<DataMove>().Name_Compare();                                   
                                     ingameStep++;
-                                    Ingredient_Count++;
-                                    hiddentIngredientCount++;
+                                    Ingredient_Count++;                                    
                                     basic_instance[i].GetComponent<DataMove>().DataMoving();
                                     keyboardinput.SetActive(true);
                                     inventory.SetActive(false);

@@ -2185,6 +2185,11 @@ PrefabInstance:
       propertyPath: issoup
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6084898083322487967, guid: 913d745bc1e9f2143a9bcbfcb2473bc2,
+        type: 3}
+      propertyPath: hiddenSoup
+      value: 
+      objectReference: {fileID: 469005055}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 913d745bc1e9f2143a9bcbfcb2473bc2, type: 3}
 --- !u!224 &506246198 stripped
@@ -9406,6 +9411,11 @@ PrefabInstance:
       propertyPath: issoup
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6955699456371499503, guid: c9bf3b0a6b35b8744afe855b2aca216c,
+        type: 3}
+      propertyPath: hiddenSoup
+      value: 
+      objectReference: {fileID: 469005055}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9bf3b0a6b35b8744afe855b2aca216c, type: 3}
 --- !u!1001 &3195911508879283406
@@ -9844,6 +9854,11 @@ PrefabInstance:
       propertyPath: issoup
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9063903013552997307, guid: 2153650cd091ad147b3ebd9afc4b140f,
+        type: 3}
+      propertyPath: hiddenSoup
+      value: 
+      objectReference: {fileID: 469005055}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2153650cd091ad147b3ebd9afc4b140f, type: 3}
 --- !u!4 &4944843444470391464 stripped
@@ -10100,6 +10115,11 @@ PrefabInstance:
       propertyPath: issoup
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5562675308484676460, guid: ef5092897a13953448d7f04630a503f9,
+        type: 3}
+      propertyPath: hiddenSoup
+      value: 
+      objectReference: {fileID: 469005055}
     - target: {fileID: 9033686038243107275, guid: ef5092897a13953448d7f04630a503f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10270,6 +10290,11 @@ PrefabInstance:
       propertyPath: issoup
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1176935623861643089, guid: 3b03aa40de8198d49a7e306376cce11f,
+        type: 3}
+      propertyPath: hiddenSoup
+      value: 
+      objectReference: {fileID: 469005055}
     - target: {fileID: 3241752133225194255, guid: 3b03aa40de8198d49a7e306376cce11f,
         type: 3}
       propertyPath: m_Name
