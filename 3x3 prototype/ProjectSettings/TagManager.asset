@@ -14,6 +14,10 @@ TagManager:
   - No
   - Tutorial
   - Audience
+  - Empty
+  - Credit_Image
+  - Credit_Text
+  - TrueEnding
   layers:
   - Default
   - TransparentFX

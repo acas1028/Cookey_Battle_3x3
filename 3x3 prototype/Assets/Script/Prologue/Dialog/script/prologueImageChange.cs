@@ -16,18 +16,20 @@ public class prologueImageChange : MonoBehaviour
     void Start()
     {
         imageNumber = 0;
+        Debug.Log(images.Length);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (imageNumber > 11)
+        if (imageNumber >= images.Length)
         {
             nameSpace.SetActive(true);
         }
         else
         {
             prologueImage.sprite = images[imageNumber];
+            Debug.Log(imageNumber);
         }
     }
 

@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Practice Mode_Space Soup.unity
     guid: 754dff41361149441acdd8963da90c33
+  - enabled: 1
+    path: Assets/Scenes/True Ending_Credit.unity
+    guid: 83e3f7161becfa244a789ed688648a84
   m_configObjects: {}

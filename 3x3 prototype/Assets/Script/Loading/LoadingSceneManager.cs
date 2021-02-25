@@ -16,18 +16,21 @@ public class LoadingSceneManager : MonoBehaviour
 
     int time = 0;
 
+    bool isClick;
     
     [SerializeField]
     Image progressBar;
     [SerializeField]
-    Text text;
 
-
+    public Image backGroundImage;
+    public Sprite backGroundImageSource;
+    public GameObject nextButton;
+    public GameObject backGroundImageObject;
 
     private void Start()
 
     {
-
+        isClick = false;
         StartCoroutine(LoadScene());
 
     }
@@ -91,15 +94,19 @@ public class LoadingSceneManager : MonoBehaviour
             {
                 time++;
                 if (time > 300)
-                { 
-                    text.gameObject.SetActive(true); 
+                {
+                    backGroundImageObject.GetComponent<Animator>().SetBool("isLoadingFinish", true);
+                    backGroundImage.sprite = backGroundImageSource;
+
+                    yield return new WaitForSeconds(1.5f);
+                    nextButton.gameObject.SetActive(true);
+
                 }
                 progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, 1f, timer);
 
 
 
-                if (Input.GetKeyDown(KeyCode.Space))
-
+                if (isClick == true)
                 {
 
                     op.allowSceneActivation = true;
@@ -112,6 +119,11 @@ public class LoadingSceneManager : MonoBehaviour
 
         }
 
+    }
+
+    public void isClicked()
+    {
+        isClick = true;
     }
 
 }

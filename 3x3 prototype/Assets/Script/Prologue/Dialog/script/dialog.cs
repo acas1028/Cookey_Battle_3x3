@@ -68,8 +68,17 @@ public class dialog : MonoBehaviour
         prologueImage = dialog_obj.GetComponent<parameter>().prologueImage;
 
         running = true;
+
+
+        if (dialog_obj.tag == "TrueEnding")
+        {
+            GameManager.instance.SetUserName("123123"); // 디버깅용
+            string sub = "\"우승자는..." + GameManager.instance.GetUserName() + "!!\" \n 이럴 수 가.. 요리대회 우승자로 내 이름이 호명됐다!!!\n관중들이 환호하고 빵빠레가 터지며 모두가 날 축하한다.";
+            text_seq.Enqueue(sub);
+        }
         foreach (dialog_info dialog_temp in dialog_cycles[index].info)  //대화 단위를 큐로 관리하기 위해 넣는다.
         {
+           
             text_seq.Enqueue(dialog_temp.content);
         }
 
