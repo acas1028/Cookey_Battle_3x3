@@ -111,6 +111,7 @@ public class DataMove : MonoBehaviour
             }
             else
             {
+                
                 fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((fieldobject.GetComponent<FieldObjectScript>().fieldScore + 0));
             }
         }

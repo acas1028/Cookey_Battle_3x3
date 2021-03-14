@@ -26,15 +26,19 @@ public class DataSpace : MonoBehaviour
 
     private void Update()
     {
-        for (int i = 0; i < data_GameManager.warehouseItemList.Count; i++)
+
+        
+        for (int i = 0; i < data_GameManager.aiItemList.Count; i++)
         {
             if (count == i)
             {
-                item_List = data_GameManager.warehouseItemList[i];
+
+                item_List = data_GameManager.aiItemList[i];
             }
+
         }
 
-        if(isMakingIngredinet==true)
+        if (isMakingIngredinet==true)
         {
             for(int i=0; i< soup_MakingIngredients.GetComponent<MakingDatabaseManager>().SoupAnswer_Making_ItemList.Count;i++)
             {
@@ -46,6 +50,7 @@ public class DataSpace : MonoBehaviour
                     item_List.Explanation = SoupMakingIngredient.Explanation;
                     item_List.score = SoupMakingIngredient.score;
                 }
+                
             }
         }
         

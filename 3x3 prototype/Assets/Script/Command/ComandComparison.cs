@@ -18,6 +18,8 @@ public class ComandComparison : MonoBehaviour
     
     public int CommandComparisonCount = 0; // 점수 비교를 한 뒤 얼마나 맞혔는지를 체크하기위한 정수형 변수
 
+    public bool isWrongCommand = false;
+
    
 
 
@@ -95,6 +97,7 @@ public class ComandComparison : MonoBehaviour
                 if (i == calculationCommand.Commands.Count - 1 && calculationCommand.Commands[i] == commandCollection.BoilingCommand[i])
                 {
                     commandName = "Boiling_Command";
+                    Debug.Log("1");
                 }
             }
 
@@ -273,14 +276,14 @@ public class ComandComparison : MonoBehaviour
         {
             if (calculationCommand.Commands.Count > CommandsAnswer.Count)
             {
-                commandName = null;
+                isWrongCommand = true;
                 CommandComparisonCount += 1;
                 break;
             }
 
             if (calculationCommand.Commands[i]!=CommandsAnswer[i])
             {
-                commandName = null;
+                isWrongCommand = true;
                 CommandComparisonCount += 1;
                 break;
             }
@@ -293,25 +296,27 @@ public class ComandComparison : MonoBehaviour
                 CommandComparisonCount += 1;
             }
 
-            
 
-           
 
             
-                
+
+
+
         }
-        
 
-
-            
-        
-        
         
 
 
 
 
-    }
+
+
+
+
+
+
+
+}
 
 
     

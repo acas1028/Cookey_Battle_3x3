@@ -57,16 +57,16 @@ public class Soup_Command_DataBase : MonoBehaviour
 
     public string GetItemName_SoupCommand(int number)
     {
-        return SoupAnswer_Command_ItemList[number].Name;
+        return aiItemList[number].Name;
     }
 
     public void GetItemName_SoupCommand_Count(string Name)
     {
-        for(int I=0; I<SoupAnswer_Command_ItemList.Count;I++)
+        for(int I=0; I<aiItemList.Count;I++)
         {
-            if(SoupAnswer_Command_ItemList[I].Name == Name)// 지금 쳐야하는 커맨드임을 알려주는 및 카운트 명시
+            if(aiItemList[I].Name == Name)// 지금 쳐야하는 커맨드임을 알려주는 및 카운트 명시
             {
-               HisCount =SoupAnswer_Command_ItemList[I].Count;
+               HisCount =aiItemList[I].Count;
                
             }
         }

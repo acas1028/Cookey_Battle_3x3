@@ -54,7 +54,7 @@ public class Soup_DataBase : MonoBehaviour
 
     public string GetItemName(int number)
     {
-        return SoupAnswer_ItemList[number].Name;
+        return aiItemList[number].Name;
     }
     
 }

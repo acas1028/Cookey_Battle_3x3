@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class InputCommand : MonoBehaviour
 {
@@ -109,10 +111,13 @@ public class InputCommand : MonoBehaviour
 
             else if (Input.GetKeyDown(KeyCode.Space))
             {
+                
                 comandComparison.Comparison();
+                CommandCompare.GetComponent<CommandCompare>().Command_checking();
                 if (commandCount.GetComponent<CommandCount>().isSoup == true)
                 {
                     CommandCompare.GetComponent<CommandCompare>().CommandCompare_Soup();
+                    Debug.Log("3");
                 }
                 if (commandCount.GetComponent<CommandCount>().isSlime == true)
                 {
@@ -123,6 +128,12 @@ public class InputCommand : MonoBehaviour
                 {
                     CommandCompare.GetComponent<CommandCompare>().CommandCompare_Dragon();
                 }
+
+                
+                    
+               
+                    
+                
             }
 
         }
