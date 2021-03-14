@@ -10,9 +10,10 @@ public class BeforeChangeScript : MonoBehaviour
     public GameObject afterSpaceObject_3rd;
     public GameObject foodCover;
     public GameObject backGroundEffect;
-
-    public GameObject goMainMenuButton;
     public GameObject goStageSelectButton;
+
+    public GameObject soundBox;
+    SoundBoxController soundBoxAudio;
 
 
     public Sprite goodEffect;
@@ -39,32 +40,39 @@ public class BeforeChangeScript : MonoBehaviour
     void Start()
     {
         SetEffect();
+        soundBoxAudio = soundBox.GetComponent<SoundBoxController>();
+        soundBoxAudio.PlaySound(0);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if (playerScore >= enemy1Score && playerScore >= enemy2Score)
-            {
-                afterSpaceObject_1st.SetActive(true);
-            }
-            else if (playerScore >= enemy1Score && playerScore < enemy2Score)
-                afterSpaceObject_2nd.SetActive(true);
-            else if (playerScore >= enemy2Score && playerScore < enemy1Score)
-                afterSpaceObject_2nd.SetActive(true);
-            else if (playerScore < enemy1Score && playerScore < enemy2Score)
-                afterSpaceObject_3rd.SetActive(true);
-
-            foodCover.SetActive(false);
-            backGroundEffect.SetActive(true);
-            goMainMenuButton.SetActive(true);
-            goStageSelectButton.SetActive(true);
+            foodCover.GetComponent<Animator>().SetBool("isStart", true);
             this.gameObject.SetActive(false);
         }
     }
 
+    public void SetAfterSpaceObject()
+    {
+        if (playerScore >= enemy1Score && playerScore >= enemy2Score)
+        {
+            afterSpaceObject_1st.SetActive(true);
+        }
+        else if (playerScore >= enemy1Score && playerScore < enemy2Score)
+            afterSpaceObject_2nd.SetActive(true);
+        else if (playerScore >= enemy2Score && playerScore < enemy1Score)
+            afterSpaceObject_2nd.SetActive(true);
+        else if (playerScore < enemy1Score && playerScore < enemy2Score)
+            afterSpaceObject_3rd.SetActive(true);
+    }
+
+    public void SetStageSelectObject()
+    {
+        goStageSelectButton.SetActive(true);
+    }
     void SetEnemyScore()
     {
         int rand = 0;

@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class Command_KeyBoardInputScript : MonoBehaviour
 {
     private int numberOfPage;
-    public Sprite page_0;
-    public Sprite page_1;
+    public Sprite[] pages;
     public GameObject mainGameKeyBoardInput;
     // Start is called before the first frame update
     void Start()
@@ -35,14 +34,14 @@ public class Command_KeyBoardInputScript : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.DownArrow))
         {
-            if(numberOfPage < 1)
+            if(numberOfPage < 8)
             {
                 numberOfPage++;
             }
         }
 
-        if (numberOfPage > 1)
-            numberOfPage = 1;
+        if (numberOfPage > 7)
+            numberOfPage = 7;
         if (numberOfPage < 0)
             numberOfPage = 0;
 
@@ -51,16 +50,6 @@ public class Command_KeyBoardInputScript : MonoBehaviour
 
     void settingImage(int num)
     {
-        switch(num)
-        {
-            case 0:
-                this.gameObject.GetComponent<Image>().sprite = page_0;
-                break;
-            case 1:
-                this.gameObject.GetComponent<Image>().sprite = page_1;
-                break;
-            default:
-                break;
-        }
+        this.gameObject.GetComponent<Image>().sprite = pages[num];
     }
 }

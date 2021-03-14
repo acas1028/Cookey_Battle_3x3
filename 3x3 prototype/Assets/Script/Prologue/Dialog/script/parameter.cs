@@ -9,4 +9,5 @@ public class parameter : MonoBehaviour
     public Text content;
     public Text next_text;
     public GameObject prologueImage;
+    public GameObject soundBox;
 }
