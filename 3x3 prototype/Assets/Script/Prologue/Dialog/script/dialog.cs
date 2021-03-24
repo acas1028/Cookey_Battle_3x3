@@ -36,6 +36,7 @@ public class dialog : MonoBehaviour
     public GameObject dialog_obj;                                       //대화 지문 오브젝트
     public GameObject prologueImage;
     public GameObject soundBox;
+    public GameObject UserName;
 
     IEnumerator seq_;
     IEnumerator skip_seq;
@@ -68,6 +69,7 @@ public class dialog : MonoBehaviour
         Next_T = dialog_obj.GetComponent<parameter>().next_text;
         prologueImage = dialog_obj.GetComponent<parameter>().prologueImage;
         soundBox = dialog_obj.GetComponent<parameter>().soundBox;
+        UserName = dialog_obj.GetComponent<parameter>().UserName;
 
         running = true;
 
@@ -118,6 +120,7 @@ public class dialog : MonoBehaviour
 
     public void DisplayNext(int index, int number)                      //다음 지문으로 넘어가기
     {
+        if (UserName != null) UserName.SetActive(false);
         prologueImage.GetComponent<prologueImageChange>().PlusImageNumber();
         soundBox.GetComponent<SoundBoxController>().PlaySound(0);
         Next_T.text = "";

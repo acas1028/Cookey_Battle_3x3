@@ -10,4 +10,5 @@ public class parameter : MonoBehaviour
     public Text next_text;
     public GameObject prologueImage;
     public GameObject soundBox;
+    public GameObject UserName;
 }

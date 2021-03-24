@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     public GameObject NextObject;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +23,13 @@ public class AnimationController : MonoBehaviour
     {
         if(NextObject != null)
             NextObject.SetActive(true);
+
     }
 
     public void DestroyThis()
     {
         Destroy(gameObject);
     }
+
+    
 }

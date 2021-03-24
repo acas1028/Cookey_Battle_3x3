@@ -10,7 +10,7 @@ public class ScoreEvaluationSceneChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log(GameManager.instance.GetStage1State());
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class ScoreEvaluationSceneChange : MonoBehaviour
         switch(GameManager.instance.GetStageLevel())
         {
             case 1:
-                if (GameManager.instance.GetStage1State() == 0)
+                if (GameManager.instance.GetStage1Clear() != true)
                 {
                     SceneManager.LoadScene(badEndingScene);
                 }
@@ -32,7 +32,7 @@ public class ScoreEvaluationSceneChange : MonoBehaviour
                     LoadingSceneManager.LoadScene(stageSelectScene);
                 break;
             case 2:
-                if (GameManager.instance.GetStage2State() == 0)
+                if (GameManager.instance.GetStage2Clear() != true)
                 {
                     SceneManager.LoadScene(badEndingScene);
                 }
@@ -40,7 +40,7 @@ public class ScoreEvaluationSceneChange : MonoBehaviour
                     LoadingSceneManager.LoadScene(stageSelectScene);
                 break;
             case 3:
-                if (GameManager.instance.GetStage3State() == 0)
+                if (GameManager.instance.GetStage3Clear() != true)
                 {
                     SceneManager.LoadScene(badEndingScene);
                 }

@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251.50003, y: -72.99882}
-  m_SizeDelta: {x: 684.4636, y: 563.4934}
+  m_AnchoredPosition: {x: 300, y: -100}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6823955
 MonoBehaviour:
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 017a910eca515ee43a907921da6db313, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a65cdae116dd2e44a96df82d99588c5a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -208,6 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71fda4b4bba9d1f47bd289f5e23935d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodFoodImage: {fileID: 21300000, guid: a65cdae116dd2e44a96df82d99588c5a, type: 3}
+  badFoodImage: {fileID: 21300000, guid: 72cd021fb7685dd41b5d0b24cf2eb228, type: 3}
 --- !u!1 &21161956
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,7 +567,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a0c8b1f3ef26519429d10e54cb7cc99d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f2846890fc5f194591bef5f809fbea2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -595,9 +597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfcb0d1580eb44d4fbc1ac3fb61dc47a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodBackGround: {fileID: 21300000, guid: a0c8b1f3ef26519429d10e54cb7cc99d, type: 3}
-  badBackGround: {fileID: 21300000, guid: 3aeef10127646a44daa7d8eafea42daa, type: 3}
-  hiddenBackGround: {fileID: 21300000, guid: 0a7d7598c43b49147b6df5c3c22103bd, type: 3}
+  goodBackGround: {fileID: 21300000, guid: 0f2846890fc5f194591bef5f809fbea2, type: 3}
+  badBackGround: {fileID: 21300000, guid: e008bbeeeacb0bd4aa233ac8f7de7f39, type: 3}
+  hiddenBackGround: {fileID: 21300000, guid: 15302d1cb9a517f41829197901e452a7, type: 3}
 --- !u!1 &356294088
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +614,7 @@ GameObject:
   - component: {fileID: 356294092}
   - component: {fileID: 356294093}
   - component: {fileID: 356294094}
+  - component: {fileID: 356294095}
   m_Layer: 5
   m_Name: BackGroundLight
   m_TagString: Untagged
@@ -720,6 +723,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beforeObject: {fileID: 1414961571}
+--- !u!114 &356294095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356294088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a43d51299324443b8a4b417859fb09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BeforeGameObject: {fileID: 1414961571}
+  SoundBox: {fileID: 933930459}
 --- !u!1 &457441569
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +749,7 @@ GameObject:
   - component: {fileID: 457441572}
   - component: {fileID: 457441571}
   - component: {fileID: 457441573}
+  - component: {fileID: 457441574}
   m_Layer: 5
   m_Name: BackGroundEffect
   m_TagString: Untagged
@@ -777,7 +795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4e63a516ee0a5db42b900b1540d12f75, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -814,6 +832,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &457441574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457441569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1f6a6dc12913842b323f4e0fb81ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &541637452
 GameObject:
   m_ObjectHideFlags: 0

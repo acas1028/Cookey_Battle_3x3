@@ -34,10 +34,10 @@ EditorBuildSettings:
     guid: b6bf0d4239fa3c9498fab6fb5778d5a0
   - enabled: 1
     path: Assets/Scenes/Stage2_ScoreEvaluation.unity
-    guid: a22e013835e961b48b06f065cc2f1f00
+    guid: 5f6b0fe3edec400438d593fa5531e2a4
   - enabled: 1
     path: Assets/Scenes/Stage3_ScoreEvaluation.unity
-    guid: 4ed5e6975918a744d9631cc57ace4056
+    guid: 5e71868277e4299469cfbc9c3ec45688
   - enabled: 1
     path: Assets/Scenes/Bad Ending.unity
     guid: 8507d910f7b9dcb46924d19dcc44ac28

@@ -29,6 +29,7 @@ public class BeforeChangeScript : MonoBehaviour
 
     private void Awake()
     {
+        isClear = false;
         SetEnemyScore();
         Check_StageClear();
 
@@ -40,6 +41,7 @@ public class BeforeChangeScript : MonoBehaviour
     void Start()
     {
         SetEffect();
+        
         soundBoxAudio = soundBox.GetComponent<SoundBoxController>();
         soundBoxAudio.PlaySound(0);
     }
@@ -119,30 +121,30 @@ public class BeforeChangeScript : MonoBehaviour
 
     }
 
-    void SetEffect()
+    public void SetEffect()
     {
         switch(GameManager.instance.GetStageLevel())
         {
             case 1:
-                backGroundEffect.GetComponent<Image>().sprite = badEffect;
+                backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 0);
                 if (GameManager.instance.GetStage1Clear())
-                    backGroundEffect.GetComponent<Image>().sprite = goodEffect;
+                    backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 1);
                 if (GameManager.instance.GetStage1HiddenClear())
-                    backGroundEffect.GetComponent<Image>().sprite = hiddenEffect;
+                    backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 2);
                 break;
             case 2:
-                backGroundEffect.GetComponent<Image>().sprite = badEffect;
+                backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 0);
                 if (GameManager.instance.GetStage2Clear())
-                    backGroundEffect.GetComponent<Image>().sprite = goodEffect;
+                    backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 1);
                 if (GameManager.instance.GetStage2HiddenClear())
-                    backGroundEffect.GetComponent<Image>().sprite = hiddenEffect;
+                    backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 2);
                 break;
             case 3:
-                backGroundEffect.GetComponent<Image>().sprite = badEffect;
+                backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 0);
                 if (GameManager.instance.GetStage3Clear())
-                    backGroundEffect.GetComponent<Image>().sprite = goodEffect;
+                    backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 1);
                 if (GameManager.instance.GetStage3HiddenClear())
-                    backGroundEffect.GetComponent<Image>().sprite = hiddenEffect;
+                    backGroundEffect.GetComponent<Animator>().SetInteger("ClearState", 2);
                 break;
         }
     }
@@ -163,6 +165,7 @@ public class BeforeChangeScript : MonoBehaviour
     void Stage1_ClearCheck()
     {
         GameManager.instance.SetStage1State(0);
+        GameManager.instance.SetStage1Clear(false);
         if (isClear)
         {
             GameManager.instance.SetStage1Clear(true);
@@ -192,6 +195,7 @@ public class BeforeChangeScript : MonoBehaviour
     void Stage2_ClearCheck()
     {
         GameManager.instance.SetStage2State(0);
+        GameManager.instance.SetStage2Clear(false);
         if (isClear)
         {
             GameManager.instance.SetStage2Clear(true);
@@ -217,6 +221,7 @@ public class BeforeChangeScript : MonoBehaviour
     void Stage3_ClearCheck()
     {
         GameManager.instance.SetStage3State(0);
+        GameManager.instance.SetStage3Clear(false);
         if (isClear)
         {
             GameManager.instance.SetStage3Clear(true);
