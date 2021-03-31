@@ -10,7 +10,7 @@ public class SoupButton: MonoBehaviour
     public void PracticeSoupButton()
     {
         GameManager.instance.SetStageLevel(1);
-        SceneManager.LoadScene("Practice Mode_Space Soup");
+        SceneManager.LoadScene("PracticeMode_SpaceSoup");
         this.gameObject.SetActive(false);
         
     }

@@ -974,6 +974,7 @@ MonoBehaviour:
   ShowMakingIngredient: {fileID: 586245087}
   block: {fileID: 1127616277}
   timer: {fileID: 661883501}
+  player_Anime: {fileID: 657081555}
   score_compare_basic_instance: []
   score_compare_instance: []
   Making_Ingredients:
@@ -1034,6 +1035,7 @@ MonoBehaviour:
   isInventoryOk: 0
   anim_call: 0
   isComplete: 0
+  putAnimeOk: 0
 --- !u!4 &346193895
 Transform:
   m_ObjectHideFlags: 0
@@ -1855,7 +1857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 150}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586245089
@@ -3512,7 +3514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 150}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1127616279
@@ -3978,6 +3980,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 18944863, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 23853670, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Honey
@@ -4154,6 +4160,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 327404171, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 336688421, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_TagString
       value: MovingDatabase
@@ -4234,6 +4244,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 358747089, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 360076575, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -4274,6 +4288,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 360076575, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 361037511, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -4314,6 +4332,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 361037511, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 363083114, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -4354,6 +4376,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 363083114, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 417069776, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4520,6 +4546,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 588907381, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 590821704, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Syrup
@@ -4677,6 +4707,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 910785478, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 936567585, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_TagString
       value: MovingDatabase
@@ -4753,6 +4787,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 983610656, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1027114385, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Fresh Cream
@@ -4809,6 +4847,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1035531066, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1088718072, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Tomato
@@ -4865,6 +4907,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1089680147, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1132927607, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_TagString
       value: MovingDatabase
@@ -4969,6 +5015,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1279943448, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964343, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5009,6 +5059,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964343, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964344, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5049,6 +5103,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964344, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964345, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5089,6 +5147,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964345, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964346, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5129,6 +5191,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964346, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964347, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5205,6 +5271,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964348, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964349, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5245,6 +5315,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964349, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964350, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5285,6 +5359,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964350, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964351, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5325,6 +5403,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964351, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964352, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5365,6 +5447,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964352, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964353, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5405,6 +5491,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964353, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964354, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5445,6 +5535,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964354, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964355, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5485,6 +5579,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964355, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1283964356, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5525,6 +5623,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1283964356, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1303772259, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Soy Sauce
@@ -5725,6 +5827,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1721996171, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1732409832, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Milk
@@ -5781,6 +5887,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1734606454, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1742083756, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Soya Milk
@@ -5894,6 +6004,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1870386380, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1904402529, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5934,6 +6048,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1904402529, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1913060685, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Apple
@@ -5990,6 +6108,10 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1934701919, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 1975776058, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_TagString
       value: MovingDatabase
@@ -6325,6 +6447,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 2969398422412959234, guid: 2e2425b6c1fe0a746be3cda88d175a27,
+        type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 4462092633553878628, guid: 2e2425b6c1fe0a746be3cda88d175a27,
         type: 3}
       propertyPath: m_Name
@@ -6375,6 +6502,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 4779924319466439376, guid: 2e2425b6c1fe0a746be3cda88d175a27,
+        type: 3}
+      propertyPath: player_Anime
+      value: 
+      objectReference: {fileID: 657081555}
     - target: {fileID: 5045480915875884966, guid: 2e2425b6c1fe0a746be3cda88d175a27,
         type: 3}
       propertyPath: data_GameManager

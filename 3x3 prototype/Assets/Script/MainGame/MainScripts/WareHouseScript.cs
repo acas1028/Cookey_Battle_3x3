@@ -19,7 +19,7 @@ public class WareHouseScript : MonoBehaviour
     {
         time++;
 
-        if (time > 300)
+        if (time > 100)
         {
             this.gameObject.SetActive(false);
             panel.SetActive(false);

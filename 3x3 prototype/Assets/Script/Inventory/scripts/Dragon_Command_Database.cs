@@ -57,16 +57,16 @@ public class Dragon_Command_Database : MonoBehaviour
 
     public string GetItemName_DragonCommand(int number)
     {
-        return DragonAnswer_Command_ItemList[number].Name;
+        return aiItemList[number].Name;
     }
 
     public void GetItemName_DragonCommand_Count(string Name)
     {
-        for (int I = 0; I < DragonAnswer_Command_ItemList.Count; I++)
+        for (int I = 0; I < aiItemList.Count; I++)
         {
-            if (DragonAnswer_Command_ItemList[I].Name == Name)// 지금 쳐야하는 커맨드임을 알려주는 및 카운트 명시
+            if (aiItemList[I].Name == Name)// 지금 쳐야하는 커맨드임을 알려주는 및 카운트 명시
             {
-                HisCount = DragonAnswer_Command_ItemList[I].Count;
+                HisCount = aiItemList[I].Count;
 
             }
         }

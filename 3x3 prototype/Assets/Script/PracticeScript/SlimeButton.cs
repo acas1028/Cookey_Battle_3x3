@@ -12,7 +12,7 @@ public class SlimeButton : MonoBehaviour
     public void PracticeSlimeButton()
     {
             GameManager.instance.SetStageLevel(2);
-            SceneManager.LoadScene("Practice Mode_Slime Salad");
+            SceneManager.LoadScene("PracticeMode_SlimeSalad");
             this.gameObject.SetActive(false);
 
         

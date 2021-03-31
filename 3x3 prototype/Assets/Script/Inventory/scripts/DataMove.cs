@@ -31,6 +31,8 @@ public class DataMove : MonoBehaviour
 
     public GameObject fieldobject;
 
+    public GameObject player_Anime;
+
     public int ingame_step;
 
     public int field_score;
@@ -83,8 +85,13 @@ public class DataMove : MonoBehaviour
     public void DataMoving()
     {
         fieldobject.GetComponent<FieldObjectScript>().SetitemList(myObject.GetComponent<DataSpace>().item_List);
-        //fieldobject.GetComponent<SpriteRenderer>().sprite = myObject.GetComponent<Image>().sprite;
-        data_GameManager.moveCount--;
+        player_Anime.GetComponent<Animator>().SetInteger("States", 0);
+        player_Anime.GetComponent<Animator>().SetInteger("States", 13);
+        ingame_step_object.GetComponent<CompareActiveAnswer>().putAnimeOk = true;
+        
+
+    //fieldobject.GetComponent<SpriteRenderer>().sprite = myObject.GetComponent<Image>().sprite;
+    data_GameManager.moveCount--;
         Destroy(myObject);
         Destroy(movingObject);
         //    myObject.transform.SetParent(Field.transform);
@@ -157,7 +164,9 @@ public class DataMove : MonoBehaviour
             {
                 
                 fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((fieldobject.GetComponent<FieldObjectScript>().fieldScore + myObject.GetComponent<DataSpace>().item_List.score));
+                hiddentCount = ingame_step_object.GetComponent<CompareActiveAnswer>().GetHiddenCount();
                 hiddentCount++;
+                //hiddentCount++;
                 ingame_step_object.GetComponent<CompareActiveAnswer>().SetHiddentCount(hiddentCount);
                 ingame_step_object.GetComponent<CompareActiveAnswer>().isHiddentCount++;
 

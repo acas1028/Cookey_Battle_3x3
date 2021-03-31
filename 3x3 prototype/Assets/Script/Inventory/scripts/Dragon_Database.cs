@@ -54,7 +54,7 @@ public class Dragon_Database : MonoBehaviour
 
     public string GetItemName(int number)
     {
-        return DragonAnswer_ItemList[number].Name;
+        return aiItemList[number].Name;
     }
 
 }

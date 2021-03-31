@@ -446,6 +446,18 @@ public class CommandCompare : MonoBehaviour
             }
         }
 
+        if(commandComparison.GetComponent<ComandComparison>().commandName == "fail")
+        {
+            player_animator.SetInteger("States", 0);
+            player_animator.SetInteger("States", 12);
+            if (commandComparison.GetComponent<ComandComparison>().isWrongCommand == true)
+            {
+                commandComparison.GetComponent<ComandComparison>().commandName = null;
+                commandComparison.GetComponent<ComandComparison>().isWrongCommand = false;
+            }
+        }
+        //고치는 중...
+
     }
 
 

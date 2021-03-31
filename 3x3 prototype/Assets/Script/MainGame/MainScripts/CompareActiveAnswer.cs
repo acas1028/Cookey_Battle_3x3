@@ -32,6 +32,8 @@ public class CompareActiveAnswer : MonoBehaviour
 
     public GameObject timer;
 
+    public GameObject player_Anime;
+
     public GameObject[] score_compare_basic_instance;
 
     public GameObject[] score_compare_instance;
@@ -84,6 +86,8 @@ public class CompareActiveAnswer : MonoBehaviour
 
     public bool isComplete = false;
 
+    public bool putAnimeOk = false;
+
 
 
     int ingameStage;
@@ -110,13 +114,13 @@ public class CompareActiveAnswer : MonoBehaviour
         switch (ingameStage)
         {
             case 1:
-                hiddenConditionNumber = 3;
-                break;
-            case 2:
                 hiddenConditionNumber = 4;
                 break;
+            case 2:
+                hiddenConditionNumber = 9;
+                break;
             case 3:
-                hiddenConditionNumber = 5;
+                hiddenConditionNumber = 9;
                 break;
         }
 
@@ -125,6 +129,8 @@ public class CompareActiveAnswer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(hiddenCount);
+        
         if (InventorySlot.Length == 0)
         {
             InventorySlot = GameObject.FindGameObjectsWithTag("Slot"); //문제가 생길시 고침
@@ -148,6 +154,14 @@ public class CompareActiveAnswer : MonoBehaviour
                 basic_instance.RemoveAt(i);
             }
         }
+
+        if(putAnimeOk==true && EndAnimationDone()==true)
+        {
+            player_Anime.GetComponent<Animator>().SetInteger("States", 0);
+            putAnimeOk = false;
+            
+        }
+
         switch (ingameStage)
         {
             case 1:
@@ -717,6 +731,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     making_Count = 0;
                     hiddentIngredientCount = 0;
                     hiddentmaking_Count = 0;
+                   
                     //hidden으로 가는 법?
 
 
@@ -1678,8 +1693,11 @@ public class CompareActiveAnswer : MonoBehaviour
                     command_All_Count = 0;
                     making_Count = 0;
                     hiddentIngredientCount = 0;
+                    hiddentmaking_Count = 0;
                     //hidden으로 가는 법?
 
+
+                    
 
                     gameFinishObject.SetActive(true);
                 }
@@ -2976,6 +2994,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     command_All_Count = 0;
                     making_Count = 0;
                     hiddentIngredientCount = 0;
+                    hiddentmaking_Count = 0;
                     //hidden으로 가는 법?
 
 
@@ -3059,5 +3078,19 @@ public class CompareActiveAnswer : MonoBehaviour
 
         hiddentmaking_Count++;
     }
+
+
+
+    bool EndAnimationDone()
+
+    {
+
+        return player_Anime.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("PutIngredient_Animation") && player_Anime.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.35f;
+
+    }
+
+
+
+    
 
 }

@@ -17,22 +17,23 @@ public class PratcieImageChange : MonoBehaviour
 
     private void Update()
     {
-        if(GameManager.instance.GetStage2Clear()== true)
+        Debug.Log(GameManager.instance.GetStage1Clear());
+        if(GameManager.instance.GetStage1Clear()== true)
         {
             SlimeButton.GetComponent<Image>().sprite = slimeBackGround;
             SlimeButton.GetComponent<Button>().enabled = true;
         }
-        else if(GameManager.instance.GetStage2Clear() == false)
+        else if(GameManager.instance.GetStage1Clear() == false)
         {
             SlimeButton.GetComponent<Image>().sprite = noneBackGround;
             SlimeButton.GetComponent<Button>().enabled = false;
         }
-        if (GameManager.instance.GetStage3Clear() == true)
+        if (GameManager.instance.GetStage2Clear() == true)
         {
             DragonButton.GetComponent<Image>().sprite = DragonBackGround;
             DragonButton.GetComponent<Button>().enabled = false;
         }
-        else if (GameManager.instance.GetStage3Clear() == false)
+        else if (GameManager.instance.GetStage2Clear() == false)
         {
             DragonButton.GetComponent<Image>().sprite = noneBackGround;
             DragonButton.GetComponent<Button>().enabled = false;

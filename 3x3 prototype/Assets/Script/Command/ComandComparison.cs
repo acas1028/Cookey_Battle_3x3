@@ -31,6 +31,7 @@ public class ComandComparison : MonoBehaviour
 
     public void Update()
     {
+        Debug.Log(calculationCommand.Commands.Count);
         commandCompare.GetComponent<CommandCompare>().CommandAnswer_division();
     }
 
@@ -274,9 +275,11 @@ public class ComandComparison : MonoBehaviour
 
         for (int i=0;i<calculationCommand.Commands.Count;i++)
         {
+            
             if (calculationCommand.Commands.Count > CommandsAnswer.Count)
             {
                 isWrongCommand = true;
+                commandName = "fail";
                 CommandComparisonCount += 1;
                 break;
             }
@@ -284,15 +287,18 @@ public class ComandComparison : MonoBehaviour
             if (calculationCommand.Commands[i]!=CommandsAnswer[i])
             {
                 isWrongCommand = true;
+                commandName = "fail";
                 CommandComparisonCount += 1;
                 break;
             }
+
+            
 
       
 
             if(i==calculationCommand.Commands.Count-1 && calculationCommand.Commands[i] == CommandsAnswer[i])
             {
-                
+          
                 CommandComparisonCount += 1;
             }
 
@@ -304,7 +310,14 @@ public class ComandComparison : MonoBehaviour
 
         }
 
-        
+        if (calculationCommand.Commands.Count == 0)
+        {
+            
+            isWrongCommand = true;
+            commandName = "fail";
+            CommandComparisonCount += 1;
+            
+        }
 
 
 
@@ -316,7 +329,9 @@ public class ComandComparison : MonoBehaviour
 
 
 
-}
+
+
+    }
 
 
     
