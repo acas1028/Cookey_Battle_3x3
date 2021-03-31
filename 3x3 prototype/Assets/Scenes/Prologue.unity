@@ -1785,6 +1785,7 @@ MonoBehaviour:
   dialog_obj: {fileID: 2041866488}
   prologueImage: {fileID: 0}
   soundBox: {fileID: 0}
+  UserName: {fileID: 0}
   delay: 0.1
   running: 0
 --- !u!4 &1201023458
@@ -2375,18 +2376,18 @@ MonoBehaviour:
   prologueImage: {fileID: 1780320090}
   nameSpace: {fileID: 1235991526}
   images:
-  - {fileID: 21300000, guid: a586de38815f28942a0ea9f0e121d4dc, type: 3}
-  - {fileID: 21300000, guid: 999cbbe06387c91418f91866484e5187, type: 3}
-  - {fileID: 21300000, guid: a254498f8abefc546ab288c68740ee13, type: 3}
-  - {fileID: 21300000, guid: f0d62b99e792e49419c209c165c2edd2, type: 3}
-  - {fileID: 21300000, guid: 7fca5c8f082add745989dd295d1b4d94, type: 3}
-  - {fileID: 21300000, guid: 3f09c141f9fa5d640b5f3da6cd5e6f84, type: 3}
-  - {fileID: 21300000, guid: 26b4fb20b9f30a74ba311edce02c2462, type: 3}
-  - {fileID: 21300000, guid: a392b9aad7c6b074496395dc4becbc16, type: 3}
-  - {fileID: 21300000, guid: de259f8532893cb419a3fc1e22d501bc, type: 3}
-  - {fileID: 21300000, guid: d4d2276033b9ff24b939a2d979c81cf4, type: 3}
-  - {fileID: 21300000, guid: fa1f16222d783844fa8f8766cb3902f1, type: 3}
-  - {fileID: 21300000, guid: 786d91128802cfb48a6a6688954dd0cc, type: 3}
+  - {fileID: 21300000, guid: c65a840fd6320604d9924435a752d3a2, type: 3}
+  - {fileID: 21300000, guid: 8a0f46c805c187c41baade71d033ae65, type: 3}
+  - {fileID: 21300000, guid: e6f2205b475cbca4fa37dc63b99c726e, type: 3}
+  - {fileID: 21300000, guid: a55aa1de0bbd8604bbbea2fbebccdb8f, type: 3}
+  - {fileID: 21300000, guid: d7d77118368286240897ec82d33a37b1, type: 3}
+  - {fileID: 21300000, guid: d0d50f79454a1f64db922163288c87d2, type: 3}
+  - {fileID: 21300000, guid: 4cca95c4926d0f14d81f5cb8cac0dcd4, type: 3}
+  - {fileID: 21300000, guid: 2d485e8f93df88747b2346ff3b78dd99, type: 3}
+  - {fileID: 21300000, guid: 7b35c9dd4e8f1524190c634db13e63c3, type: 3}
+  - {fileID: 21300000, guid: 05924c8205b261b4c9a741e49b5e3b12, type: 3}
+  - {fileID: 21300000, guid: dca5e4b8006704b43811f641042f6184, type: 3}
+  - {fileID: 21300000, guid: 9466a280f9debc54dbd569c86a896616, type: 3}
 --- !u!1 &1912184467
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,6 +2669,7 @@ MonoBehaviour:
   next_text: {fileID: 1912184469}
   prologueImage: {fileID: 1780320088}
   soundBox: {fileID: 905000982}
+  UserName: {fileID: 0}
 --- !u!114 &2041866491
 MonoBehaviour:
   m_ObjectHideFlags: 0

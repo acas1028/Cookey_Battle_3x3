@@ -310,7 +310,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -60}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 300, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &48719822
 MonoBehaviour:
@@ -321,19 +321,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 48719820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f5ec7fe322b9194386bf931607e88a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b4c27ee4fc61f7448b8845ab3116cf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stageNumber: 1
-  translucentLockPanel: {fileID: 611277535}
-  hiddenEffectPanel: {fileID: 912424491}
-  noneClearImage: {fileID: 21300000, guid: 017a910eca515ee43a907921da6db313, type: 3}
-  firstClearImage: {fileID: 21300000, guid: 248876fbc6fec5f4ca59e63b15721dc4, type: 3}
-  badClearImage: {fileID: 0}
-  hiddenClearImage: {fileID: 21300000, guid: 7cd13f4db382e1741a82823a6292fd7b, type: 3}
-  hiddenPerfectClearImage: {fileID: 0}
-  hiddenClearEffect: {fileID: 0}
-  hiddenPerfectClearEffect: {fileID: 0}
+  NoneClearImage: {fileID: 21300000, guid: c1f8dbe21f8fc9f40944da5f1dc5c10b, type: 3}
+  FirstClearImage: {fileID: 21300000, guid: a65cdae116dd2e44a96df82d99588c5a, type: 3}
+  BadClearImage: {fileID: 21300000, guid: 72cd021fb7685dd41b5d0b24cf2eb228, type: 3}
 --- !u!114 &48719823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,7 +649,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -60}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382122082
 MonoBehaviour:
@@ -666,19 +660,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 382122080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f5ec7fe322b9194386bf931607e88a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b4c27ee4fc61f7448b8845ab3116cf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stageNumber: 3
-  translucentLockPanel: {fileID: 164118563}
-  hiddenEffectPanel: {fileID: 947618834}
-  noneClearImage: {fileID: 21300000, guid: 6fab0a10f5f06ff4c890ba1cf28e506b, type: 3}
-  firstClearImage: {fileID: 21300000, guid: 248876fbc6fec5f4ca59e63b15721dc4, type: 3}
-  badClearImage: {fileID: 0}
-  hiddenClearImage: {fileID: 21300000, guid: 7cd13f4db382e1741a82823a6292fd7b, type: 3}
-  hiddenPerfectClearImage: {fileID: 0}
-  hiddenClearEffect: {fileID: 0}
-  hiddenPerfectClearEffect: {fileID: 0}
+  NoneClearImage: {fileID: 21300000, guid: c1f8dbe21f8fc9f40944da5f1dc5c10b, type: 3}
+  FirstClearImage: {fileID: 21300000, guid: 306b0acc38276a34bad020e8c5e629a3, type: 3}
+  BadClearImage: {fileID: 21300000, guid: c267382795e264d478289995ff6d28bf, type: 3}
 --- !u!114 &382122083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2711,7 +2699,7 @@ GameObject:
   - component: {fileID: 1812563787}
   - component: {fileID: 1812563791}
   - component: {fileID: 1812563790}
-  - component: {fileID: 1812563789}
+  - component: {fileID: 1812563788}
   m_Layer: 5
   m_Name: Stage2_Food_Image
   m_TagString: Untagged
@@ -2736,9 +2724,9 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -60}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 300, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1812563789
+--- !u!114 &1812563788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2747,19 +2735,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1812563786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f5ec7fe322b9194386bf931607e88a4, type: 3}
+  m_Script: {fileID: 11500000, guid: b4c27ee4fc61f7448b8845ab3116cf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stageNumber: 2
-  translucentLockPanel: {fileID: 1567601300}
-  hiddenEffectPanel: {fileID: 267498944}
-  noneClearImage: {fileID: 0}
-  firstClearImage: {fileID: 21300000, guid: 248876fbc6fec5f4ca59e63b15721dc4, type: 3}
-  badClearImage: {fileID: 0}
-  hiddenClearImage: {fileID: 0}
-  hiddenPerfectClearImage: {fileID: 0}
-  hiddenClearEffect: {fileID: 0}
-  hiddenPerfectClearEffect: {fileID: 0}
+  NoneClearImage: {fileID: 21300000, guid: c1f8dbe21f8fc9f40944da5f1dc5c10b, type: 3}
+  FirstClearImage: {fileID: 21300000, guid: 0bdeea1e13ce1244995cd4f173f5a6fd, type: 3}
+  BadClearImage: {fileID: 21300000, guid: 53ce51dfaa7d86f4a80824d46a422e45, type: 3}
 --- !u!114 &1812563790
 MonoBehaviour:
   m_ObjectHideFlags: 0

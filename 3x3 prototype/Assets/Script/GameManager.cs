@@ -245,7 +245,6 @@ public class GameManager : MonoBehaviour
 
     public void SetStage1Score(int Score)
     {
-        
         stage1Score = Score;
     }
 
