@@ -18,6 +18,8 @@ public class CommandCompare : MonoBehaviour
 
     public GameObject input_command;
 
+    public GameObject SoundBox;
+
     public bool timer_manager = false;
 
     public bool command_limit = false;
@@ -50,6 +52,7 @@ public class CommandCompare : MonoBehaviour
             
             command_Score += 100;
             correct_answer.SetActive(true);
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(1);
             timer_manager = true;
             command_limit = true;
             input_command.GetComponent<InputCommand>().timer = 0;
@@ -62,6 +65,7 @@ public class CommandCompare : MonoBehaviour
             command_Score += 0;
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 0)/2 );
             incorrect_answer.SetActive(true);
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(6);
             timer_manager = true;
             command_limit = true;
             input_command.GetComponent<InputCommand>().timer = 0;
@@ -77,6 +81,7 @@ public class CommandCompare : MonoBehaviour
 
             command_Score += 100;
             correct_answer.SetActive(true);
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(1);
             timer_manager = true;
             command_limit = true;
             input_command.GetComponent<InputCommand>().timer = 0;
@@ -91,6 +96,7 @@ public class CommandCompare : MonoBehaviour
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 0)/2 );
             command_Score += 0;
             incorrect_answer.SetActive(true);
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(6);
             timer_manager = true;
             command_limit = true;
             input_command.GetComponent<InputCommand>().timer = 0;
@@ -104,6 +110,7 @@ public class CommandCompare : MonoBehaviour
 
             command_Score += 100;
             correct_answer.SetActive(true);
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(1);
             timer_manager = true;
             command_limit = true;
             input_command.GetComponent<InputCommand>().timer = 0;
@@ -117,6 +124,7 @@ public class CommandCompare : MonoBehaviour
             command_Score += 0;
             //fieldobject.GetComponent<FieldObjectScript>().SetFieldScore((command_Score + 0)/2 );
             incorrect_answer.SetActive(true);
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(6);
             timer_manager = true;
             command_limit = true;
             input_command.GetComponent<InputCommand>().timer = 0;

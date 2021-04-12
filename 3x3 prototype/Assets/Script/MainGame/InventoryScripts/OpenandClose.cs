@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class OpenandClose : MonoBehaviour
 {
     public GameObject inventoryPanel;
+    public GameObject SoundBox;
     public bool activeInventory = true;
 
     private void Start()

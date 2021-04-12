@@ -18,6 +18,8 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
     public Sprite[] Dragon_Clear;
     public Sprite[] Dragon;
     public GameObject mainGameKeyBoardInput;
+
+    public GameObject SoundBox;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
         {
             numberOfPage = 0;
             numberOfRecipe = 0;
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
             mainGameKeyBoardInput.SetActive(true);
             this.gameObject.SetActive(false);
         }
@@ -46,15 +49,24 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
             {
                 case 0:
                     if (numberOfPage > 0)
+                    {
+                        SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                         numberOfPage--;
+                    }
                     break;
                 case 1:
                     if (numberOfPage > 0)
+                    {
+                        SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                         numberOfPage--;
+                    }
                     break;
                 case 2:
                     if (numberOfPage > 0)
+                    {
+                        SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                         numberOfPage--;
+                    }
                     break;
             }
            
@@ -66,15 +78,24 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
             {
                 case 0:
                     if (numberOfPage < recipe1Number - 1)
+                    {
+                        SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                         numberOfPage++;
+                    }
                     break;
                 case 1:
                     if (numberOfPage < recipe2Number - 1)
+                    {
+                        SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                         numberOfPage++;
+                    }
                     break;
                 case 2:
                     if (numberOfPage < recipe3Number - 1)
+                    {
+                        SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                         numberOfPage++;
+                    }
                     break;
             }
         }
@@ -83,6 +104,7 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
         {
             if(numberOfRecipe > 0)
             {
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                 numberOfRecipe--;
                 numberOfPage = 0;
             }
@@ -94,6 +116,7 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
         {
             if (numberOfRecipe < 3)
             {
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                 numberOfRecipe++;
                 numberOfPage = 0;
             }

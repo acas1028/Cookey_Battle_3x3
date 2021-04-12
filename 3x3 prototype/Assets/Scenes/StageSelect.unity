@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageNumber: 1
-  NoneClearImage: {fileID: 21300000, guid: c1f8dbe21f8fc9f40944da5f1dc5c10b, type: 3}
+  NoneClearImage: {fileID: 21300000, guid: 017a910eca515ee43a907921da6db313, type: 3}
   FirstClearImage: {fileID: 21300000, guid: a65cdae116dd2e44a96df82d99588c5a, type: 3}
   BadClearImage: {fileID: 21300000, guid: 72cd021fb7685dd41b5d0b24cf2eb228, type: 3}
 --- !u!114 &48719823
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageNumber: 3
-  NoneClearImage: {fileID: 21300000, guid: c1f8dbe21f8fc9f40944da5f1dc5c10b, type: 3}
+  NoneClearImage: {fileID: 21300000, guid: 017a910eca515ee43a907921da6db313, type: 3}
   FirstClearImage: {fileID: 21300000, guid: 306b0acc38276a34bad020e8c5e629a3, type: 3}
   BadClearImage: {fileID: 21300000, guid: c267382795e264d478289995ff6d28bf, type: 3}
 --- !u!114 &382122083
@@ -2739,7 +2739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageNumber: 2
-  NoneClearImage: {fileID: 21300000, guid: c1f8dbe21f8fc9f40944da5f1dc5c10b, type: 3}
+  NoneClearImage: {fileID: 21300000, guid: 017a910eca515ee43a907921da6db313, type: 3}
   FirstClearImage: {fileID: 21300000, guid: 0bdeea1e13ce1244995cd4f173f5a6fd, type: 3}
   BadClearImage: {fileID: 21300000, guid: 53ce51dfaa7d86f4a80824d46a422e45, type: 3}
 --- !u!114 &1812563790

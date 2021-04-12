@@ -40,6 +40,8 @@ public class MoveCursor : MonoBehaviour
 
     public GameObject inventory_Cursor;
 
+    public GameObject SoundBox;
+
     public bool isinventoryCursor;
 
     void Start()
@@ -97,6 +99,7 @@ public class MoveCursor : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 inventory.SetActive(false);
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(3);
                 Main_Keyboard_Input.SetActive(true);
             }
         }

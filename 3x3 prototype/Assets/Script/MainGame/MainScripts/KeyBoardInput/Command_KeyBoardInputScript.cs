@@ -8,6 +8,7 @@ public class Command_KeyBoardInputScript : MonoBehaviour
     private int numberOfPage;
     public Sprite[] pages;
     public GameObject mainGameKeyBoardInput;
+    public GameObject SoundBox;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class Command_KeyBoardInputScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Escape))
         {
             numberOfPage = 0;
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
             mainGameKeyBoardInput.SetActive(true);
             this.gameObject.SetActive(false);
         }
@@ -28,6 +30,7 @@ public class Command_KeyBoardInputScript : MonoBehaviour
         {
             if (numberOfPage > 0)
             {
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                 numberOfPage--;
             }
         }
@@ -36,6 +39,7 @@ public class Command_KeyBoardInputScript : MonoBehaviour
         {
             if(numberOfPage < 8)
             {
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
                 numberOfPage++;
             }
         }
