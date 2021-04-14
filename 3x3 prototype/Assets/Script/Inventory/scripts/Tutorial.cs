@@ -19,9 +19,7 @@ public class Tutorial : MonoBehaviour
 
     public GameObject practiceSelectButton;
 
-    public GameObject TutorialSkip;
 
-    public bool notskip = false;
 
     public Animator animator;
 
@@ -55,19 +53,15 @@ public class Tutorial : MonoBehaviour
                     //Tutorial_Image[0].SetActive(true);
                     
                     SpaceButton.GetComponent<Image>().sprite = TutorialImage[0];
-                    if(GameManager.instance.GetTutorialClear()==true)
-                    {
-                        TutorialSkip.SetActive(true);
-                    }
 
-                    if (notskip == true || GameManager.instance.GetTutorialClear() == false)
+                    if ( GameManager.instance.GetTutorialClear() == false)
                     {
                         if (Input.GetKeyDown(KeyCode.Space))// 상황에 따라 입력하는 키보드를 바꾼다.
                         {
                             SpaceButton.GetComponent<Image>().sprite = TutorialImage[1];
                             //Tutorial_Image[0].SetActive(false);
                             //Tutorial_Image[1].SetActive(true);
-                            notskip = false;
+                           
                             step++;
                         }
                     }

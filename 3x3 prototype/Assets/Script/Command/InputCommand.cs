@@ -18,7 +18,7 @@ public class InputCommand : MonoBehaviour
 
     public bool answer_manager = false;
 
-    public int timer;
+    public float timer;
 
     public bool clear_command = false;
 
@@ -33,10 +33,10 @@ public class InputCommand : MonoBehaviour
 
         if(CommandCompare.GetComponent<CommandCompare>().timer_manager == true)
         {
-            timer += 1;
+            timer += Time.deltaTime;
         }
 
-        if(timer > 200)
+        if(timer > 1)
         {
             CommandCompare.GetComponent<CommandCompare>().correct_answer.SetActive(false);
             CommandCompare.GetComponent<CommandCompare>().incorrect_answer.SetActive(false);
@@ -112,6 +112,7 @@ public class InputCommand : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Space))
             {
                 
+
                 comandComparison.Comparison();
                 CommandCompare.GetComponent<CommandCompare>().Command_checking();
                 if (commandCount.GetComponent<CommandCount>().isSoup == true)

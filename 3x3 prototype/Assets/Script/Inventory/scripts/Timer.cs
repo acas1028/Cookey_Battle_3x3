@@ -12,11 +12,11 @@ public class Timer : MonoBehaviour
 
     public void Update()
     {
-        timer += 1;
+        timer += Time.deltaTime;
         
         if(commandCompare.GetComponent<CompareActiveAnswer>().isInventoryOk==true)
         {
-            if(timer>200)
+            if(timer>1)
             {
                 commandCompare.GetComponent<CompareActiveAnswer>().ShowMakingIngredient.SetActive(false);
                 commandCompare.GetComponent<CompareActiveAnswer>().block.SetActive(false);

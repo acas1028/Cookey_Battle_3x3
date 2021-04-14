@@ -3785,6 +3785,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968178294}
   m_CullTransparentMesh: 0
+--- !u!1 &1031732217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031732218}
+  - component: {fileID: 1031732219}
+  m_Layer: 0
+  m_Name: PutAnime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1031732218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031732217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1031732219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031732217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9376851fd3be24e4c8ba3ccdc7bf3f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAnime: 0
+  player_Anime: {fileID: 907875028}
+  timer: 0
 --- !u!1 &1057413623
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,6 +4447,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 18944863, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 23853670, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Honey
@@ -4573,6 +4623,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 327404171, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 336688421, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_TagString
       value: MovingDatabase
@@ -4653,6 +4707,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 358747089, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 360076575, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -4693,6 +4751,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 360076575, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 361037511, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -4733,6 +4795,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 361037511, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 363083114, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -4773,6 +4839,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 363083114, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 417069776, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4951,6 +5021,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 588907381, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 590821704, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Syrup
@@ -5108,6 +5182,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 910785478, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 936567585, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_TagString
       value: MovingDatabase
@@ -5184,6 +5262,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 983610656, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1027114385, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Fresh Cream
@@ -5240,6 +5322,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1035531066, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1088718072, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Tomato
@@ -5296,6 +5382,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1089680147, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1132927607, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_TagString
       value: MovingDatabase
@@ -5400,6 +5490,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1279943448, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964343, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5440,6 +5534,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964343, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964344, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5480,6 +5578,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964344, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964345, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5520,6 +5622,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964345, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964346, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5560,6 +5666,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964346, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964347, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5632,6 +5742,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964348, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964349, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5672,6 +5786,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964349, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964350, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5712,6 +5830,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964350, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964351, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5752,6 +5874,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964351, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964352, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5792,6 +5918,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964352, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964353, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5832,6 +5962,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964353, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964354, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5872,6 +6006,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964354, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964355, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5912,6 +6050,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964355, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1283964356, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -5952,6 +6094,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1283964356, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1303772259, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Soy Sauce
@@ -6152,6 +6298,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1721996171, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1732409832, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Milk
@@ -6208,6 +6358,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1734606454, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1742083756, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Soya Milk
@@ -6321,6 +6475,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1870386380, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1904402529, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: parents
       value: 
@@ -6361,6 +6519,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1904402529, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1913060685, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_Name
       value: Apple
@@ -6417,6 +6579,10 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 1934701919, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 1975776058, guid: 2e2425b6c1fe0a746be3cda88d175a27, type: 3}
       propertyPath: m_TagString
       value: MovingDatabase
@@ -6747,6 +6913,11 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 2969398422412959234, guid: 2e2425b6c1fe0a746be3cda88d175a27,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 4462092633553878628, guid: 2e2425b6c1fe0a746be3cda88d175a27,
         type: 3}
       propertyPath: m_Name
@@ -6802,6 +6973,11 @@ PrefabInstance:
       propertyPath: player_Anime
       value: 
       objectReference: {fileID: 907875028}
+    - target: {fileID: 4779924319466439376, guid: 2e2425b6c1fe0a746be3cda88d175a27,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 1031732217}
     - target: {fileID: 5045480915875884966, guid: 2e2425b6c1fe0a746be3cda88d175a27,
         type: 3}
       propertyPath: data_GameManager
@@ -10229,12 +10405,13 @@ MonoBehaviour:
   hiddenDragon: {fileID: 0}
   ingame_step_object: {fileID: 346193893}
   fieldobject: {fileID: 476160129}
-  player_Anime: {fileID: 907875028}
+  putingredientAnime: {fileID: 0}
   ingame_step: 0
   field_score: 0
   hiddentCount: 0
   space_onoff: 0
   isinventorystart: 0
+  isAnime: 0
   issoup: 1
   isslime: 0
   isDragon: 0

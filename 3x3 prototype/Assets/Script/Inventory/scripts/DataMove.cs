@@ -31,7 +31,7 @@ public class DataMove : MonoBehaviour
 
     public GameObject fieldobject;
 
-    public GameObject player_Anime;
+    public GameObject putingredientAnime;
 
     public int ingame_step;
 
@@ -42,6 +42,8 @@ public class DataMove : MonoBehaviour
     public bool space_onoff = false;
 
     public bool isinventorystart = false;
+
+    public bool isAnime = false;
 
     public bool issoup;
 
@@ -85,10 +87,8 @@ public class DataMove : MonoBehaviour
     public void DataMoving()
     {
         fieldobject.GetComponent<FieldObjectScript>().SetitemList(myObject.GetComponent<DataSpace>().item_List);
-        player_Anime.GetComponent<Animator>().SetInteger("States", 0);
-        player_Anime.GetComponent<Animator>().SetInteger("States", 13);
         ingame_step_object.GetComponent<CompareActiveAnswer>().putAnimeOk = true;
-        
+        putingredientAnime.GetComponent<PutIngredientAnime>().isAnime = true;
 
     //fieldobject.GetComponent<SpriteRenderer>().sprite = myObject.GetComponent<Image>().sprite;
     data_GameManager.moveCount--;
@@ -100,6 +100,8 @@ public class DataMove : MonoBehaviour
         //movingObject.transform.position = Field.transform.position;
         
     }
+
+    
 
     public void Score_Calculation()
     {

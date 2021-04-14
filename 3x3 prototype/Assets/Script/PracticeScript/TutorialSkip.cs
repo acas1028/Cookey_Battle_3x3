@@ -30,6 +30,6 @@ public class TutorialSkip : MonoBehaviour
     {
         isSkip = false;
         this.gameObject.SetActive(false);
-        tutorialInput.GetComponent<Tutorial>().notskip = true;
+        
     }
 }
