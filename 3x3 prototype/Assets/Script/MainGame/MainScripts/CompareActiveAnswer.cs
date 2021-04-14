@@ -8,6 +8,8 @@ public class CompareActiveAnswer : MonoBehaviour
     public GameObject fieldObject;
     public GameObject gameFinishObject;
 
+    public GameObject SoundBox;
+
     public GameObject compare_score;
 
     public GameObject movetag;
@@ -3051,6 +3053,7 @@ public class CompareActiveAnswer : MonoBehaviour
         {
             ShowMakingIngredient.GetComponent<Image>().sprite = Making_Ingredients[making_Count].GetComponent<Image>().sprite;
             ShowMakingIngredient.SetActive(true);
+            SoundBox.GetComponent<SoundBoxController>().PlaySound(4);
             block.SetActive(true);
         }
 
@@ -3074,6 +3077,7 @@ public class CompareActiveAnswer : MonoBehaviour
         Debug.Log(hiddenMaking_Ingredients[hiddentmaking_Count].GetComponent<Image>().sprite);
         ShowMakingIngredient.GetComponent<Image>().sprite = hiddenMaking_Ingredients[hiddentmaking_Count].GetComponent<Image>().sprite;
         ShowMakingIngredient.SetActive(true);
+        SoundBox.GetComponent<SoundBoxController>().PlaySound(4);
         block.SetActive(true);
 
         hiddentmaking_Count++;

@@ -1260,7 +1260,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 223d6637fe7e9f54cb828cd8ff2c7bba, type: 3}
   - {fileID: 21300000, guid: b2b9040d7abd5b842902c0a7c635cb47, type: 3}
   mainGameKeyBoardInput: {fileID: 2000335422}
-  SoundBox: {fileID: 0}
+  SoundBox: {fileID: 1917247679}
 --- !u!1 &338211434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +1339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fieldObject: {fileID: 476160129}
   gameFinishObject: {fileID: 2130261730}
+  SoundBox: {fileID: 1917247679}
   compare_score: {fileID: 0}
   movetag: {fileID: 1715488435}
   keyboardinput: {fileID: 2000335422}
@@ -3910,6 +3911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wareHouse: {fileID: 1237441774}
+  SoundBox: {fileID: 1917247679}
 --- !u!114 &1156223213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8823,6 +8825,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 854b488f5d4446741888593b26d2826f, type: 3}
   - {fileID: 8300000, guid: 7db4fe641f8093246a6dc0755ef6b070, type: 3}
   - {fileID: 8300000, guid: 17196d044fd67464e8112d8ad0f64dbe, type: 3}
+  - {fileID: 8300000, guid: 0a346e5a8dd1dd147856d9fff153ea8a, type: 3}
 --- !u!1 &1928236986
 GameObject:
   m_ObjectHideFlags: 0
