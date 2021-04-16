@@ -19,6 +19,6 @@ public class BadEndingImageController : MonoBehaviour
     {
         fader.GetComponent<FadeController>().FadeIn(0.7f);
         yield return new WaitForSeconds(3f);
-        fader.GetComponent<FadeController>().FadeOut(0.7f,() =>SceneManager.LoadScene(0));
+        fader.GetComponent<FadeController>().FadeOut(0.7f,() =>SceneManager.LoadScene("MainMenu"));
     }
 }
