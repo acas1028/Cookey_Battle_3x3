@@ -6811,6 +6811,11 @@ PrefabInstance:
       propertyPath: putingredientAnime
       value: 
       objectReference: {fileID: 2061330278}
+    - target: {fileID: 2969398422412959234, guid: 2e2425b6c1fe0a746be3cda88d175a27,
+        type: 3}
+      propertyPath: data_GameManager
+      value: 
+      objectReference: {fileID: 1973789027}
     - target: {fileID: 4462092633553878628, guid: 2e2425b6c1fe0a746be3cda88d175a27,
         type: 3}
       propertyPath: m_Name
@@ -6871,6 +6876,11 @@ PrefabInstance:
       propertyPath: putingredientAnime
       value: 
       objectReference: {fileID: 2061330278}
+    - target: {fileID: 4779924319466439376, guid: 2e2425b6c1fe0a746be3cda88d175a27,
+        type: 3}
+      propertyPath: data_GameManager
+      value: 
+      objectReference: {fileID: 1973789027}
     - target: {fileID: 5045480915875884966, guid: 2e2425b6c1fe0a746be3cda88d175a27,
         type: 3}
       propertyPath: data_GameManager
@@ -8063,6 +8073,11 @@ PrefabInstance:
       propertyPath: inventoryScript
       value: 
       objectReference: {fileID: 1715488437}
+    - target: {fileID: 6540525102845513285, guid: 4318a4fafe08f5c4890ecece4bcc52be,
+        type: 3}
+      propertyPath: SoundBox
+      value: 
+      objectReference: {fileID: 1184920834}
     - target: {fileID: 6540525102888053385, guid: 4318a4fafe08f5c4890ecece4bcc52be,
         type: 3}
       propertyPath: m_FontData.m_Alignment
@@ -9067,7 +9082,7 @@ MonoBehaviour:
   inventory: {fileID: 350075925}
   commandBook: {fileID: 619826497}
   recipeBook: {fileID: 308926728}
-  SoundBox: {fileID: 0}
+  SoundBox: {fileID: 1184920834}
 --- !u!4 &2000335424
 Transform:
   m_ObjectHideFlags: 0

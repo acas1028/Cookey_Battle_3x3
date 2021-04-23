@@ -91,7 +91,7 @@ public class DataMove : MonoBehaviour
         putingredientAnime.GetComponent<PutIngredientAnime>().isAnime = true;
 
     //fieldobject.GetComponent<SpriteRenderer>().sprite = myObject.GetComponent<Image>().sprite;
-    data_GameManager.moveCount--;
+        data_GameManager.moveCount--;
         Destroy(myObject);
         Destroy(movingObject);
         //    myObject.transform.SetParent(Field.transform);
