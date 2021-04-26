@@ -28,4 +28,5 @@ public class MusicChange : MonoBehaviour
     {
         GameManager.instance.musicVol = musicVolume.value;
     }
+
 }
