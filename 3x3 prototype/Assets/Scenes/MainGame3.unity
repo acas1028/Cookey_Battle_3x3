@@ -9714,6 +9714,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 70541418177802000, guid: 5a9d3da2d8f68524b8ae97a484967774,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 70541418177802001, guid: 5a9d3da2d8f68524b8ae97a484967774,
         type: 3}
       propertyPath: data_GameManager
@@ -9918,6 +9923,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 81277141002532923, guid: 1be1050a8bd34234eb919fbdb9d1964e,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1be1050a8bd34234eb919fbdb9d1964e, type: 3}
 --- !u!1001 &289813560808935790
@@ -10022,6 +10032,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 289813560344141590, guid: 0b047fb6d88b2954095fa7dae4d6f359,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 289813560344141591, guid: 0b047fb6d88b2954095fa7dae4d6f359,
         type: 3}
       propertyPath: data_GameManager
@@ -10096,6 +10111,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 621039831919724616, guid: 367018c8f3424f44181215e05f4166fc,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 621039831919724617, guid: 367018c8f3424f44181215e05f4166fc,
         type: 3}
       propertyPath: data_GameManager
@@ -10666,6 +10686,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 1283506767458603105, guid: e6c2bfba542c6844293a7777f4cf8748,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 1283506767458603106, guid: e6c2bfba542c6844293a7777f4cf8748,
         type: 3}
       propertyPath: data_GameManager
@@ -10855,6 +10880,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 1444573651420287085, guid: 46dd53b123fd0734cba802ba34689fca,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 1444573651420287086, guid: 46dd53b123fd0734cba802ba34689fca,
         type: 3}
       propertyPath: m_Name
@@ -10994,6 +11024,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 5410054987702385669, guid: 216a9c3fcd9062f4c946728deb2f76c9,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 216a9c3fcd9062f4c946728deb2f76c9, type: 3}
 --- !u!4 &1690727371512425193 stripped
@@ -11140,6 +11175,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 2086811377602957575, guid: 1183f606424c6024da0be6afb52a0ce2,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1183f606424c6024da0be6afb52a0ce2, type: 3}
 --- !u!1001 &2283642236084382079
@@ -11515,6 +11555,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 2687617460817376077, guid: 3b8b5dd626aad514580bc9db00bfa6ff,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b8b5dd626aad514580bc9db00bfa6ff, type: 3}
 --- !u!1001 &3138508035720519824
@@ -11685,6 +11730,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 3367330036806140584, guid: af6c99393c54f4740adf48041f2420ab,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 3367330036806140585, guid: af6c99393c54f4740adf48041f2420ab,
         type: 3}
       propertyPath: data_GameManager
@@ -11935,6 +11985,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 3828295449449230902, guid: 2610e59d9326b014299ac7ba943aa902,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 3828295449449230903, guid: 2610e59d9326b014299ac7ba943aa902,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12039,6 +12094,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 4745271303133999280, guid: 4a1ae3d0ccb1bb34dbaf587040228762,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 4745271303133999281, guid: 4a1ae3d0ccb1bb34dbaf587040228762,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12512,6 +12572,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 5285805131105298254, guid: 44d221f4e4b84584ca09bb322e2a03d6,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44d221f4e4b84584ca09bb322e2a03d6, type: 3}
 --- !u!4 &5341975091879110428 stripped
@@ -12749,6 +12814,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 6333446154290426854, guid: c4c3c8ed4348d3145a5161ebe2836182,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 6333446154290426855, guid: c4c3c8ed4348d3145a5161ebe2836182,
         type: 3}
       propertyPath: data_GameManager
@@ -13074,6 +13144,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 7087670688841436677, guid: 1e9b75c9fc858b048a41194f70dce20a,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 7087670688841436678, guid: 1e9b75c9fc858b048a41194f70dce20a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13213,6 +13288,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 7272981244682956819, guid: af8d7dfbfb273a945be5bfb6396b0cd3,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 7272981244682956821, guid: af8d7dfbfb273a945be5bfb6396b0cd3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13920,6 +14000,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 8459749296038432080, guid: 5885f59d37ddd2c46b9ae3010a61abde,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 8459749296038432081, guid: 5885f59d37ddd2c46b9ae3010a61abde,
         type: 3}
       propertyPath: m_Name
@@ -14049,6 +14134,11 @@ PrefabInstance:
       propertyPath: hiddenDragon
       value: 
       objectReference: {fileID: 1318756738}
+    - target: {fileID: 9048804829613751780, guid: 641690f20c284564b854550b9b82f7a0,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 23674079}
     - target: {fileID: 9048804829613751781, guid: 641690f20c284564b854550b9b82f7a0,
         type: 3}
       propertyPath: data_GameManager

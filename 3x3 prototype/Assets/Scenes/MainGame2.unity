@@ -9703,6 +9703,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 3537803767827922017, guid: d42b036b64c9d344a87ae50488185c2f,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 8251726476699225979, guid: d42b036b64c9d344a87ae50488185c2f,
         type: 3}
       propertyPath: data_GameManager
@@ -9797,6 +9802,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 1527724283781487309, guid: 416b50bc0fe52cc4f87517a17848730e,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 1527724283781487311, guid: 416b50bc0fe52cc4f87517a17848730e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9991,6 +10001,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 7487391955524424211, guid: 1eb65e61c2696d040a40105072c7f12d,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eb65e61c2696d040a40105072c7f12d, type: 3}
 --- !u!1001 &1689140177737610284
@@ -10244,6 +10259,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 6447567103328184898, guid: 585bf9b7124d6f548b199f37be1ddd3e,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 585bf9b7124d6f548b199f37be1ddd3e, type: 3}
 --- !u!1001 &2520733445110556428
@@ -10313,6 +10333,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 2520733446658689948, guid: 29aef1ddc757faf42891fe37cd839c27,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 2520733446658689949, guid: 29aef1ddc757faf42891fe37cd839c27,
         type: 3}
       propertyPath: data_GameManager
@@ -10631,6 +10656,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 3296590202816458638, guid: f14604b0759372447865df3d12c6ce34,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 3296590202816458639, guid: f14604b0759372447865df3d12c6ce34,
         type: 3}
       propertyPath: data_GameManager
@@ -10785,6 +10815,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 3414923047784216408, guid: d5200f31ee07d9e45b4ff33a5661866f,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 3414923047784216409, guid: d5200f31ee07d9e45b4ff33a5661866f,
         type: 3}
       propertyPath: m_Name
@@ -10998,6 +11033,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 4349048431865546541, guid: d87c7cb36159e334c8254978066a3a43,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 4349048431865546543, guid: d87c7cb36159e334c8254978066a3a43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11192,6 +11232,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 7111133973647862432, guid: c8e715b2f765edc429bb5e743faa292c,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8e715b2f765edc429bb5e743faa292c, type: 3}
 --- !u!1001 &5224719461570114870
@@ -11419,6 +11464,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 3997099450135592188, guid: bbec3474566c70b4e951ef98ca258d32,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 6423307062575509326, guid: bbec3474566c70b4e951ef98ca258d32,
         type: 3}
       propertyPath: data_GameManager
@@ -11495,6 +11545,11 @@ PrefabInstance:
       propertyPath: fieldobject
       value: 
       objectReference: {fileID: 476160129}
+    - target: {fileID: 45193597379754053, guid: d6fc83ae35a2b7843ad6c2ec080b0785,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 3474373708495281084, guid: d6fc83ae35a2b7843ad6c2ec080b0785,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11646,6 +11701,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 5573557837741944148, guid: 5482e9be95b9e30479c843c439e7dadd,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 5573557837741944149, guid: 5482e9be95b9e30479c843c439e7dadd,
         type: 3}
       propertyPath: m_Name
@@ -12689,6 +12749,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 4836160274199561946, guid: 57e5f142f5f76fa4a87484fe24a099e9,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 7252448307687425795, guid: 57e5f142f5f76fa4a87484fe24a099e9,
         type: 3}
       propertyPath: m_Name
@@ -12899,6 +12964,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 8854123071273236586, guid: b944572536dbbd44c8d784d7e5a21461,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 8854123071273236587, guid: b944572536dbbd44c8d784d7e5a21461,
         type: 3}
       propertyPath: data_GameManager
@@ -13182,6 +13252,11 @@ PrefabInstance:
       propertyPath: hiddenSlime
       value: 
       objectReference: {fileID: 492751137}
+    - target: {fileID: 9221684204277678515, guid: a0150317ee9adfb4b9c3247781863895,
+        type: 3}
+      propertyPath: putingredientAnime
+      value: 
+      objectReference: {fileID: 2061330278}
     - target: {fileID: 9221684204277678517, guid: a0150317ee9adfb4b9c3247781863895,
         type: 3}
       propertyPath: m_LocalPosition.x
