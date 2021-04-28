@@ -27,14 +27,15 @@ public class Anim_call : MonoBehaviour
     {
         if (anim_call.GetComponent<CompareActiveAnswer>().anim_call == true)
         {
-            if (time >= 5f)
+            if (time >= 4f)
             {
+                
                 Random_make();
                 player_animator.SetInteger("States", ran_states);
             }
-            if (time >= 10f)
+            if (time >= 4f)
             {
-                time = 5f;
+                time = 0f;
             }
         }
 
@@ -42,8 +43,9 @@ public class Anim_call : MonoBehaviour
 
     public void Random_make()
     {
-        if (time <= 5.01f &&time >=5f)
+        if (time <= 8.0f &&time >=4f)
         {
+            
             ran_states = Random.Range(1, 5);
         }
     }
