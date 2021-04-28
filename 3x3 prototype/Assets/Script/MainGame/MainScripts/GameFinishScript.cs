@@ -27,43 +27,49 @@ public class GameFinishScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            switch(GameManager.instance.GetStageLevel())
-            {
-                case 1:
-                    fieldObject.GetComponent<FieldObjectScript>().SetFieldScore(fieldScore / 16);
-                    fieldScore = fieldObject.GetComponent<FieldObjectScript>().GetFieldScore();
-                    GameManager.instance.SetStage1Try(true);
-                    GameManager.instance.SetStage1Score(fieldScore);
-                    LoadingSceneManager.LoadScene(8);
-                    break;
-                case 2:
-                    fieldObject.GetComponent<FieldObjectScript>().SetFieldScore(fieldScore / 28);
-                    fieldScore = fieldObject.GetComponent<FieldObjectScript>().GetFieldScore();
-                    GameManager.instance.SetStage2Try(true);
-                    GameManager.instance.SetStage2Score(fieldScore);
-                    LoadingSceneManager.LoadScene(9);
-                    break;
-                case 3:
-                    fieldObject.GetComponent<FieldObjectScript>().SetFieldScore(fieldScore / 38);
-                    fieldScore = fieldObject.GetComponent<FieldObjectScript>().GetFieldScore();
-                    GameManager.instance.SetStage3Try(true);
-                    GameManager.instance.SetStage3Score(fieldScore);
-                    LoadingSceneManager.LoadScene(10);
-                    break;
-            }
-
-            if (hiddenCondition == hiddenCount)
-            {
-                GameManager.instance.SetStageHiddenCondition(true);
-                Debug.Log("Hidden Clear");
-            }
-            else
-            {
-                GameManager.instance.SetStageHiddenCondition(false);
-                Debug.Log("Normal Clear");
-            }
-            
+            GameFinish();      
         }
+    }
+
+    public void GameFinish()
+    {
+        if (hiddenCondition == hiddenCount)
+        {
+            GameManager.instance.SetStageHiddenCondition(true);
+            Debug.Log("Hidden Clear");
+        }
+        else
+        {
+            GameManager.instance.SetStageHiddenCondition(false);
+            Debug.Log("Normal Clear");
+        }
+
+        switch (GameManager.instance.GetStageLevel())
+        {
+            case 1:
+                fieldObject.GetComponent<FieldObjectScript>().SetFieldScore(fieldScore / 16);
+                fieldScore = fieldObject.GetComponent<FieldObjectScript>().GetFieldScore();
+                GameManager.instance.SetStage1Try(true);
+                GameManager.instance.SetStage1Score(fieldScore);
+                LoadingSceneManager.LoadScene(8);
+                break;
+            case 2:
+                fieldObject.GetComponent<FieldObjectScript>().SetFieldScore(fieldScore / 28);
+                fieldScore = fieldObject.GetComponent<FieldObjectScript>().GetFieldScore();
+                GameManager.instance.SetStage2Try(true);
+                GameManager.instance.SetStage2Score(fieldScore);
+                LoadingSceneManager.LoadScene(9);
+                break;
+            case 3:
+                fieldObject.GetComponent<FieldObjectScript>().SetFieldScore(fieldScore / 38);
+                fieldScore = fieldObject.GetComponent<FieldObjectScript>().GetFieldScore();
+                GameManager.instance.SetStage3Try(true);
+                GameManager.instance.SetStage3Score(fieldScore);
+                LoadingSceneManager.LoadScene(10);
+                break;
+        }
+
+        
     }
     
    

@@ -23,8 +23,18 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        numberOfPage = 0;
-        numberOfRecipe = 0;
+        switch (GameManager.instance.GetStageLevel())
+        {
+            case 1:
+                numberOfRecipe = 0;
+                break;
+            case 2:
+                numberOfRecipe = 1;
+                break;
+            case 3:
+                numberOfRecipe = 2;
+                break;
+        }
 
         recipe1Number = 4;
         recipe2Number = 10;
@@ -36,8 +46,19 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Escape))
         {
+            switch(GameManager.instance.GetStageLevel())
+            {
+                case 1:
+                    numberOfRecipe = 0;
+                    break;
+                case 2:
+                    numberOfRecipe = 1;
+                    break;
+                case 3:
+                    numberOfRecipe = 2;
+                    break;
+            }
             numberOfPage = 0;
-            numberOfRecipe = 0;
             SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
             mainGameKeyBoardInput.SetActive(true);
             this.gameObject.SetActive(false);
