@@ -9,6 +9,6 @@ public class Mainmenudirection : MonoBehaviour
     public void Mainmenudirect()
     {
         SceneManager.LoadScene("MainMenu");
-        this.gameObject.SetActive(false);
+        
     }
 }

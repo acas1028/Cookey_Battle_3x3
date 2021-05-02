@@ -20,6 +20,6 @@ public class DragonButton: MonoBehaviour
     {
         GameManager.instance.SetStageLevel(3);
         SceneManager.LoadScene("PracticeMode_DragonWallington");
-        this.gameObject.SetActive(false);
+        
     }
 }
