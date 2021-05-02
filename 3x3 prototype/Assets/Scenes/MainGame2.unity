@@ -7651,6 +7651,7 @@ MonoBehaviour:
   CommandCompare: {fileID: 357009715}
   commandCount: {fileID: 2125476975}
   compareactive: {fileID: 346193893}
+  SoundBox: {fileID: 1184920834}
   answer_manager: 0
   timer: 0
   clear_command: 0

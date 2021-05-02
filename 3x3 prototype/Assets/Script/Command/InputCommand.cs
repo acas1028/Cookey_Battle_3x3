@@ -16,6 +16,8 @@ public class InputCommand : MonoBehaviour
 
     public GameObject compareactive;
 
+    public GameObject SoundBox;
+
     public bool answer_manager = false;
 
     public float timer;
@@ -86,6 +88,7 @@ public class InputCommand : MonoBehaviour
                 calculationCommand.Commands.Add(KeyCode.UpArrow);
                 command.Spawn(command.Spawnposition(count), KeyCode.UpArrow);
                 count += 1;
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(5);
             }
 
             else if (Input.GetKeyDown(KeyCode.RightArrow) && count < 11)
@@ -93,6 +96,7 @@ public class InputCommand : MonoBehaviour
                 calculationCommand.Commands.Add(KeyCode.RightArrow);
                 command.Spawn(command.Spawnposition(count), KeyCode.RightArrow);
                 count += 1;
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(5);
             }
 
             else if (Input.GetKeyDown(KeyCode.DownArrow) && count < 11)
@@ -100,6 +104,7 @@ public class InputCommand : MonoBehaviour
                 calculationCommand.Commands.Add(KeyCode.DownArrow);
                 command.Spawn(command.Spawnposition(count), KeyCode.DownArrow);
                 count += 1;
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(5);
             }
 
             else if (Input.GetKeyDown(KeyCode.LeftArrow) && count < 11)
@@ -107,6 +112,7 @@ public class InputCommand : MonoBehaviour
                 calculationCommand.Commands.Add(KeyCode.LeftArrow);
                 command.Spawn(command.Spawnposition(count), KeyCode.LeftArrow);
                 count += 1;
+                SoundBox.GetComponent<SoundBoxController>().PlaySound(5);
             }
 
             else if (Input.GetKeyDown(KeyCode.Space))

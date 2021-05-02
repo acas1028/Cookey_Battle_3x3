@@ -7675,6 +7675,7 @@ MonoBehaviour:
   CommandCompare: {fileID: 357009715}
   commandCount: {fileID: 2125476975}
   compareactive: {fileID: 346193893}
+  SoundBox: {fileID: 574472135}
   answer_manager: 0
   timer: 0
   clear_command: 0
@@ -9003,7 +9004,7 @@ MonoBehaviour:
   inventory: {fileID: 350075925}
   commandBook: {fileID: 619826497}
   recipeBook: {fileID: 308926728}
-  SoundBox: {fileID: 0}
+  SoundBox: {fileID: 574472135}
 --- !u!4 &2000335424
 Transform:
   m_ObjectHideFlags: 0
