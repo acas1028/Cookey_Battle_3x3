@@ -5118,6 +5118,11 @@ PrefabInstance:
       propertyPath: inventory_Cursor
       value: 
       objectReference: {fileID: 2022638064}
+    - target: {fileID: 1741281291405715081, guid: 2e2425b6c1fe0a746be3cda88d175a27,
+        type: 3}
+      propertyPath: SoundBox
+      value: 
+      objectReference: {fileID: 1915092361}
     - target: {fileID: 1824801849449350506, guid: 2e2425b6c1fe0a746be3cda88d175a27,
         type: 3}
       propertyPath: m_Name
