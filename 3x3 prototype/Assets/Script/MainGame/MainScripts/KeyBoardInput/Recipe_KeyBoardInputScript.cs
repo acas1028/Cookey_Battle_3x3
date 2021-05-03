@@ -37,7 +37,7 @@ public class Recipe_KeyBoardInputScript : MonoBehaviour
         }
 
         recipe1Number = 4;
-        recipe2Number = 10;
+        recipe2Number = 9;
         recipe3Number = 22;
     }
 

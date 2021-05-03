@@ -45,7 +45,7 @@ public class ScoreEvaluationSceneChange : MonoBehaviour
                     SceneManager.LoadScene(badEndingScene);
                 }
                 else
-                    LoadingSceneManager.LoadScene(stageSelectScene);
+                    SceneManager.LoadScene(15);
                 break;
             default:
                 break;

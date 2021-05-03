@@ -202,7 +202,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &364401357
 GameObject:
@@ -859,7 +859,7 @@ MonoBehaviour:
         \uB9D0\uD588\uB2E4.\n\"\uC598\uC57C, \uB124\uAC00 \uC9C4\uC9DC \uC694\uB9AC\uC5D0
         \uC18C\uC9C8\uC774 \uC5C6\uAE34 \uD55C\uAC00\uBCF4\uB2E4. \uBA87\uB144\uC744
         \uC218\uB828\uD588\uB2E4\uBA70?\n\uAC8C\uB2E4\uAC00 \uC6B0\uB9AC \uAC00\uAC8C
-        \uC57C\uCC44\uAE4C\uC9C0 \uC37B\uB294\uB370 \uB5A8\uC5B4\uC9C0\uB2E4\uB2C8..
+        \uC57C\uCC44\uAE4C\uC9C0 \uC37C\uB294\uB370 \uB5A8\uC5B4\uC9C0\uB2E4\uB2C8..
         \uCBE7\uCBE7\uCBE7.\""
       check_read: 0
     - name: 4
@@ -897,7 +897,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956211810
 GameObject:

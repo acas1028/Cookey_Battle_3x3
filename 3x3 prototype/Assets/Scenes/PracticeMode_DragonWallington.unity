@@ -5690,7 +5690,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f058caf3d7b39df459122cc036977e5d, type: 3}
   - {fileID: 21300000, guid: e865900bf19adf3448c111f134728d68, type: 3}
   - {fileID: 21300000, guid: d2d772047e2afae40a432ca5f94e1db9, type: 3}
-  - {fileID: 21300000, guid: dc56260d43bcf974d900bd9a8cb802af, type: 3}
   Slime:
   - {fileID: 21300000, guid: 8f0363dc4f0c91148bc54edb4389199a, type: 3}
   - {fileID: 21300000, guid: 3620aa25f0ec6e84492d9d0743c83c15, type: 3}
@@ -5701,7 +5700,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8dd177afc0f82494f89a3cc78dc77ddf, type: 3}
   - {fileID: 21300000, guid: 3e39ba8c57eed914ba020bfb3d0b1e93, type: 3}
   - {fileID: 21300000, guid: e33e1539f6b4b304099a00bcaeda4574, type: 3}
-  - {fileID: 21300000, guid: 88cdef5a145510246a3c69dd3d04ad40, type: 3}
   Dragon_Clear:
   - {fileID: 21300000, guid: 01a3f95050a233344b170d514be8e1f0, type: 3}
   - {fileID: 21300000, guid: d75cbe105a1143643b1ece8b6a268087, type: 3}
