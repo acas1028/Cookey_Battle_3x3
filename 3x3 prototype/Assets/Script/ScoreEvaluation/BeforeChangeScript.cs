@@ -176,8 +176,8 @@ public class BeforeChangeScript : MonoBehaviour
                 GameManager.instance.SetStage1HiddenClear(true);
                 GameManager.instance.SetStage1State(2);
             }
-
-            GameManager.instance.SetStageProgress(1);
+            if(GameManager.instance.GetStageProgress() < 2)
+                GameManager.instance.SetStageProgress(1);
         }
         else
             GameManager.instance.SetStageProgress(0);
@@ -206,7 +206,8 @@ public class BeforeChangeScript : MonoBehaviour
                 GameManager.instance.SetStage2HiddenClear(true);
                 GameManager.instance.SetStage2State(2);
             }
-            GameManager.instance.SetStageProgress(2);
+            if (GameManager.instance.GetStageProgress() < 3)
+                GameManager.instance.SetStageProgress(2);
         }
         else
             GameManager.instance.SetStageProgress(0);
@@ -231,7 +232,8 @@ public class BeforeChangeScript : MonoBehaviour
                 GameManager.instance.SetStage1HiddenClear(true);
                 GameManager.instance.SetStage3State(2);
             }
-            GameManager.instance.SetStageProgress(3);
+            if (GameManager.instance.GetStageProgress() < 4)
+                GameManager.instance.SetStageProgress(3);
         }
         else
             GameManager.instance.SetStageProgress(0);

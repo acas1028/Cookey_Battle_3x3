@@ -16,7 +16,7 @@ public class StageSelect_PanelChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        SettingPanel();
     }
 
     void SettingPanel()
@@ -32,11 +32,6 @@ public class StageSelect_PanelChange : MonoBehaviour
                 Stage1Panel.SetActive(false);
                 Stage2Panel.SetActive(false);
                 Stage3Panel.SetActive(true);
-                break;
-            case 2:
-                Stage1Panel.SetActive(false);
-                Stage2Panel.SetActive(false);
-                Stage3Panel.SetActive(false);
                 break;
             default:
                 Stage1Panel.SetActive(false);

@@ -18,6 +18,7 @@ TagManager:
   - Credit_Image
   - Credit_Text
   - TrueEnding
+  - SoundBox
   layers:
   - Default
   - TransparentFX

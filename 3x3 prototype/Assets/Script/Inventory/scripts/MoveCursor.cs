@@ -55,6 +55,7 @@ public class MoveCursor : MonoBehaviour
         blockX = 0;
         blockY = 0;
         inventorySlots = GameObject.FindGameObjectsWithTag("Slot");
+        SoundBox = GameObject.FindGameObjectWithTag("SoundBox");
 
     }
 

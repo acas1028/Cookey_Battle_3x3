@@ -629,6 +629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicVolume: {fileID: 105651947}
+  soundVolume: {fileID: 1915940735}
 --- !u!1 &220009998
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class prologueImageChange : MonoBehaviour
     {
         imageNumber = 0;
         Debug.Log(images.Length);
+        GameManager.instance.SetStageProgress(0);
     }
 
     // Update is called once per frame

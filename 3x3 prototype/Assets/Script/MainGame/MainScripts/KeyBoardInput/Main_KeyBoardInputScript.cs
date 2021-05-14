@@ -8,6 +8,7 @@ public class Main_KeyBoardInputScript : MonoBehaviour
     public GameObject commandBook;
     public GameObject recipeBook;
     public GameObject SoundBox;
+    public GameObject Option;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,11 @@ public class Main_KeyBoardInputScript : MonoBehaviour
             recipeBook.SetActive(true);
             this.gameObject.SetActive(false);
             SoundBox.GetComponent<SoundBoxController>().PlaySound(0);
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Option.SetActive(true);
+            this.gameObject.SetActive(false);
         }
     }
 }
