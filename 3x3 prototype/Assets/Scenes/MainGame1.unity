@@ -1416,6 +1416,7 @@ MonoBehaviour:
   incorrect_answer: {fileID: 922978390}
   input_command: {fileID: 1667713502}
   SoundBox: {fileID: 1917247679}
+  caculationCommand: {fileID: 1667713502}
   timer_manager: 0
   command_limit: 0
   player_animator: {fileID: 907875029}

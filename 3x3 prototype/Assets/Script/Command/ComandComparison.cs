@@ -37,17 +37,20 @@ public class ComandComparison : MonoBehaviour
 
     public void Comparison()
     {
+       
         
 
         for (int i=0; i<calculationCommand.Commands.Count;i++)
         {
-            if(calculationCommand.Commands.Count>=3)
+            if (calculationCommand.Commands.Count != 2 )
             {
+                
                 break;
             }
 
             if(calculationCommand.Commands[i]!=commandCollection.CuttingCommand[i])
             {
+                
                 break;
             }
             if (calculationCommand.Commands.Count== commandCollection.CuttingCommand.Count)
@@ -62,13 +65,15 @@ public class ComandComparison : MonoBehaviour
 
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
-            if (calculationCommand.Commands.Count >= 9)
+            if (calculationCommand.Commands.Count != 8 )
             {
+                
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.Boiling_DownCommand[i])
             {
+               
                 break;
             }
 
@@ -83,13 +88,15 @@ public class ComandComparison : MonoBehaviour
         }
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
-            if (calculationCommand.Commands.Count >= 5)
+            if (calculationCommand.Commands.Count != 4)
             {
+                
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.BoilingCommand[i])
             {
+                
                 break;
             }
 
@@ -106,13 +113,15 @@ public class ComandComparison : MonoBehaviour
 
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
-            if (calculationCommand.Commands.Count >= 10)
+            if (calculationCommand.Commands.Count != 9)
             {
+              
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.ChoppingCommand[i])
             {
+               
                 break;
             }
 
@@ -128,13 +137,15 @@ public class ComandComparison : MonoBehaviour
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
 
-            if (calculationCommand.Commands.Count >= 4)
+            if (calculationCommand.Commands.Count != 3)
             {
+                
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.MashCommand[i])
             {
+                
                 break;
             }
             if (calculationCommand.Commands.Count == commandCollection.MashCommand.Count)
@@ -148,13 +159,15 @@ public class ComandComparison : MonoBehaviour
         }
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
-            if (calculationCommand.Commands.Count >= 4)
+            if (calculationCommand.Commands.Count != 3)
             {
+                
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.SprayCommand[i])
             {
+               
                 break;
             }
             if (calculationCommand.Commands.Count== commandCollection.SprayCommand.Count)
@@ -169,13 +182,15 @@ public class ComandComparison : MonoBehaviour
 
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
-            if (calculationCommand.Commands.Count >= 9)
+            if (calculationCommand.Commands.Count != 8)
             {
+               
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.WrapUpCommand[i])
             {
+                
                 break;
             }
             if(calculationCommand.Commands.Count== commandCollection.WrapUpCommand.Count)
@@ -190,13 +205,15 @@ public class ComandComparison : MonoBehaviour
 
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
-            if (calculationCommand.Commands.Count >= 4)
+            if (calculationCommand.Commands.Count != 3)
             {
+                
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.Cut_inInsertCommand[i])
             {
+               
                 break;
             }
 
@@ -212,8 +229,15 @@ public class ComandComparison : MonoBehaviour
 
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
+            if(calculationCommand.Commands.Count != 10)
+            {
+               
+                break;
+            }
+
             if (calculationCommand.Commands[i] != commandCollection.Stir_fryCommand[i])
             {
+                
                 break;
             }
 
@@ -230,13 +254,15 @@ public class ComandComparison : MonoBehaviour
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
 
-            if (calculationCommand.Commands.Count >= 9)
+            if (calculationCommand.Commands.Count != 8)
             {
+                
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.IroningCommand[i])
             {
+               
                 break;
             }
             if(calculationCommand.Commands.Count== commandCollection.IroningCommand.Count)
@@ -252,13 +278,15 @@ public class ComandComparison : MonoBehaviour
         for (int i = 0; i < calculationCommand.Commands.Count; i++)
         {
 
-            if (calculationCommand.Commands.Count >= 7)
+            if (calculationCommand.Commands.Count != 6)
             {
+                
                 break;
             }
 
             if (calculationCommand.Commands[i] != commandCollection.PushCommand[i])
             {
+                
                 break;
             }
             if(calculationCommand.Commands.Count== commandCollection.PushCommand.Count)
@@ -276,7 +304,7 @@ public class ComandComparison : MonoBehaviour
         for (int i=0;i<calculationCommand.Commands.Count;i++)
         {
             
-            if (calculationCommand.Commands.Count > CommandsAnswer.Count)
+            if (calculationCommand.Commands.Count != CommandsAnswer.Count )
             {
                 isWrongCommand = true;
                 commandName = "fail";
