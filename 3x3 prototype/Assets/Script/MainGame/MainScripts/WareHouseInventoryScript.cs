@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WareHouseInventoryScript : MonoBehaviour
 {
+    public GameObject wareHouse_RecipeBook;
     public GameObject ingameStepObject;
     public GameObject MainKeyBoardInput;
 
@@ -28,12 +29,15 @@ public class WareHouseInventoryScript : MonoBehaviour
     public int WareHouseDestroy = 0;
 
     public bool isscript = false;
+
+    public bool isRecipeOn;
     
     // Start is called before the first frame update
     void Start()
     {
         dataMove = GameObject.FindGameObjectsWithTag("MovingDatabase");
         inventoryslots = GameObject.FindGameObjectsWithTag("Slot");
+        isRecipeOn = false;
     }
 
     // Update is called once per frame
@@ -41,7 +45,12 @@ public class WareHouseInventoryScript : MonoBehaviour
     {
         dataMove = GameObject.FindGameObjectsWithTag("MovingDatabase");
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            isRecipeOn = true;
+            wareHouse_RecipeBook.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && isRecipeOn == false)
         {
 
             ingameStepObject.GetComponent<CompareActiveAnswer>().SetIngameStep(1);
