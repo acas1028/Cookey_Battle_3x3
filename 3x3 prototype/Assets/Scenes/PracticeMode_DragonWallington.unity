@@ -813,7 +813,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0ecf32f84be567142802d49350fe0872, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 04d06de96c5c89342af79cf8d9e4d05c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -6841,6 +6841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6347599133d6674587e06a08ce02d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wareHouse_RecipeBook: {fileID: 0}
   ingameStepObject: {fileID: 346193893}
   MainKeyBoardInput: {fileID: 2000335422}
   inventory: {fileID: 350075925}
@@ -6854,6 +6855,7 @@ MonoBehaviour:
   inventory_move: {fileID: 0}
   WareHouseDestroy: 0
   isscript: 0
+  isRecipeOn: 0
 --- !u!1 &1717779951
 GameObject:
   m_ObjectHideFlags: 0

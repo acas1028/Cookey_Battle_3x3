@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public class MainGame_UserNameScript : MonoBehaviour
 {
-    public Text userNameText;
     // Start is called before the first frame update
     void Start()
     {
-        userNameText.text = GameManager.instance.GetUserName().ToString();
+        this.GetComponent<Text>().text = GameManager.instance.GetUserName().ToString();
     }
 
     // Update is called once per frame
