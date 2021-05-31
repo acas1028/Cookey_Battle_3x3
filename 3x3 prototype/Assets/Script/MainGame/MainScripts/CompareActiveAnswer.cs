@@ -16,8 +16,6 @@ public class CompareActiveAnswer : MonoBehaviour
 
     public GameObject keyboardinput;
 
-    public GameObject command_keyboard_input;
-
     public GameObject commandbar;
 
     public GameObject inventory;
@@ -105,7 +103,6 @@ public class CompareActiveAnswer : MonoBehaviour
         ingameStage = GameManager.instance.GetStageLevel();
         ingameStep = 0;
         hiddenCount = 0;
-        command_keyboard_input.SetActive(false);
         movetag.GetComponent<Find_tag>();
 
         
@@ -122,7 +119,7 @@ public class CompareActiveAnswer : MonoBehaviour
                 hiddenConditionNumber = 4;
                 break;
             case 2:
-                hiddenConditionNumber = 10;
+                hiddenConditionNumber = 9;
                 break;
             case 3:
                 hiddenConditionNumber = 9;
@@ -134,6 +131,7 @@ public class CompareActiveAnswer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(hiddenCount);
         
         if (InventorySlot.Length == 0)
         {
@@ -265,7 +263,6 @@ public class CompareActiveAnswer : MonoBehaviour
                     if(iscommandStart==true)
                     {
                         keyboardinput.SetActive(false);
-                        command_keyboard_input.SetActive(true);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
                         
@@ -283,7 +280,6 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
-                        command_keyboard_input.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -425,7 +421,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
@@ -442,7 +437,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -526,7 +521,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
@@ -543,7 +537,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -593,7 +587,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
@@ -610,7 +603,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -701,7 +694,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
@@ -718,7 +710,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount && Soup_Command_Database.GetComponent<Soup_Command_DataBase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -793,7 +785,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -810,7 +801,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -902,7 +893,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -919,7 +909,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1011,7 +1001,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -1028,7 +1017,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1088,7 +1077,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -1105,7 +1093,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1163,7 +1151,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -1180,7 +1167,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1293,7 +1280,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -1310,7 +1296,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1370,7 +1356,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -1387,7 +1372,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1436,7 +1421,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -1453,7 +1437,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;                       
@@ -1504,7 +1488,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
@@ -1521,7 +1504,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount && Soup_Command_Database.GetComponent<SlimeCommandDatabase>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1769,7 +1752,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -1786,7 +1768,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1895,7 +1877,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -1912,7 +1893,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -1963,7 +1944,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -1980,7 +1960,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2103,7 +2083,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2120,7 +2099,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2182,7 +2161,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2199,7 +2177,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2290,7 +2268,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2307,7 +2284,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2463,7 +2440,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2480,7 +2456,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2542,7 +2518,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2559,7 +2534,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2611,7 +2586,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2628,7 +2602,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2687,7 +2661,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2704,7 +2677,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2819,7 +2792,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2836,7 +2808,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2888,7 +2860,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -2905,7 +2876,7 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
@@ -2988,7 +2959,6 @@ public class CompareActiveAnswer : MonoBehaviour
                 {
                     if (iscommandStart == true)
                     {
-                        command_keyboard_input.SetActive(true);
                         keyboardinput.SetActive(false);
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
@@ -3005,12 +2975,13 @@ public class CompareActiveAnswer : MonoBehaviour
 
                     if (CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount == Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount && Soup_Command_Database.GetComponent<Dragon_Command_Database>().HisCount != 0 && command_manager.GetComponent<InputCommand>().clear_command == true)
                     {
-                        command_keyboard_input.SetActive(false);
+
                         commandbar.SetActive(false);
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
                         isInventoryOk = true;
+                        timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
                         command_manager.GetComponent<InputCommand>().clear_command = false;

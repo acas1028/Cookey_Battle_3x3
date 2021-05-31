@@ -191,11 +191,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &55620656
-=======
---- !u!1 &28388942
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,25 +199,17 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 55620657}
   - component: {fileID: 55620660}
   - component: {fileID: 55620659}
   - component: {fileID: 55620658}
   m_Layer: 5
   m_Name: Text
-=======
-  - component: {fileID: 28388944}
-  - component: {fileID: 28388943}
-  m_Layer: 0
-  m_Name: Commandboard_recipe_Input
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!224 &55620657
 RectTransform:
   m_ObjectHideFlags: 0
@@ -242,15 +230,11 @@ RectTransform:
   m_SizeDelta: {x: 152.0528, y: 54.97697}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &55620658
-=======
---- !u!114 &28388943
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 55620656}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -259,23 +243,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &55620659
 MonoBehaviour:
-=======
-  m_GameObject: {fileID: 28388942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3529abef3df181444bfbf39222885198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  command_Recipe: {fileID: 619826497}
-  recipe: {fileID: 308926728}
---- !u!4 &28388944
-Transform:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 55620656}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -311,16 +282,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55620656}
   m_CullTransparentMesh: 0
-=======
-  m_GameObject: {fileID: 28388942}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 512, y: 384, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &65588478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +1406,6 @@ MonoBehaviour:
   compare_score: {fileID: 0}
   movetag: {fileID: 1715488435}
   keyboardinput: {fileID: 2000335422}
-  command_keyboard_input: {fileID: 28388942}
   commandbar: {fileID: 968178294}
   inventory: {fileID: 350075925}
   inventoryandcommanbarSwitch: {fileID: 338211434}
@@ -11507,7 +11467,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5e239f4a485086247ba30db59f404cde,
+      objectReference: {fileID: 21300000, guid: 31edeac8eef24e540beba1172949db50,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87ec8b3d3d1facb40b185bffe5e5eef9, type: 3}

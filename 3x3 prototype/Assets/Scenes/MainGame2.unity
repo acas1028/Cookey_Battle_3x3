@@ -1109,7 +1109,6 @@ MonoBehaviour:
   compare_score: {fileID: 0}
   movetag: {fileID: 1715488435}
   keyboardinput: {fileID: 2000335422}
-  command_keyboard_input: {fileID: 668218884}
   commandbar: {fileID: 968178294}
   inventory: {fileID: 350075925}
   inventoryandcommanbarSwitch: {fileID: 338211434}
@@ -2822,51 +2821,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &668218884
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 668218886}
-  - component: {fileID: 668218885}
-  m_Layer: 0
-  m_Name: Commandboard_recipe_Input
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &668218885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668218884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3529abef3df181444bfbf39222885198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  command_Recipe: {fileID: 619826497}
-  recipe: {fileID: 308926728}
---- !u!4 &668218886
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668218884}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 512, y: 384, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670769761
 GameObject:
