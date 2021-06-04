@@ -56,6 +56,8 @@ public class CompareActiveAnswer : MonoBehaviour
 
     public GameObject command_manager;
 
+    public GameObject commandboard_recipe_Input;
+
     public int Ingredient_Count = 0;
 
     public int making_Count = 0;
@@ -263,6 +265,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if(iscommandStart==true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
                         
@@ -280,6 +283,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -422,6 +427,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -439,6 +445,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -522,6 +530,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -539,6 +548,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -588,6 +599,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -605,6 +617,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -695,6 +709,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand_Count(Soup_Command_Database.GetComponent<Soup_Command_DataBase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -712,6 +727,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         isComplete = true;
@@ -786,6 +803,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -803,6 +821,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -894,6 +914,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -911,6 +932,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -1002,6 +1025,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -1019,6 +1043,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -1078,6 +1104,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -1095,6 +1122,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -1152,6 +1181,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -1169,6 +1199,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -1281,6 +1313,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -1298,6 +1331,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -1357,6 +1392,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -1374,6 +1410,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -1422,6 +1460,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -1439,6 +1478,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;                       
                         Making_ingredient();                     
@@ -1489,6 +1530,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SlimeCommand_Count(Soup_Command_Database.GetComponent<SlimeCommandDatabase>().GetItemName_SoupCommand(command_All_Count));
 
@@ -1506,6 +1548,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -1753,6 +1797,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -1770,6 +1815,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -1878,6 +1925,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -1895,6 +1943,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -1945,6 +1995,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -1962,6 +2013,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -2084,6 +2137,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2101,6 +2155,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -2162,6 +2218,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2179,6 +2236,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -2269,6 +2328,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2286,6 +2346,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -2441,6 +2503,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2458,6 +2521,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -2519,6 +2584,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2536,6 +2602,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -2587,6 +2655,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2604,6 +2673,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         if (isHiddentCount == 0)
@@ -2662,6 +2733,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2679,6 +2751,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -2793,6 +2867,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2810,6 +2885,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();                                       
@@ -2861,6 +2938,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2878,6 +2956,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
@@ -2960,6 +3040,7 @@ public class CompareActiveAnswer : MonoBehaviour
                     if (iscommandStart == true)
                     {
                         keyboardinput.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = true;
                         commandbar.SetActive(true);
                         Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand_Count(Soup_Command_Database.GetComponent<Dragon_Command_Database>().GetItemName_DragonCommand(command_All_Count));
 
@@ -2977,6 +3058,8 @@ public class CompareActiveAnswer : MonoBehaviour
                     {
 
                         commandbar.SetActive(false);
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().is_Commanding = false;
+                        commandboard_recipe_Input.GetComponent<Command_recipeScript>().starting_command_Count = 0;
                         commandCompare.GetComponent<CommandCompare>().CommandScore();
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();

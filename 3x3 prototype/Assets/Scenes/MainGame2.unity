@@ -1159,6 +1159,7 @@ MonoBehaviour:
   dataGameManager: {fileID: 1973789026}
   maingame_inventory: {fileID: 1057413623}
   command_manager: {fileID: 1667713502}
+  commandboard_recipe_Input: {fileID: 488590338}
   Ingredient_Count: 0
   making_Count: 0
   hiddentmaking_Count: 0
@@ -1916,6 +1917,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5573557837792791313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &488590338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488590340}
+  - component: {fileID: 488590339}
+  m_Layer: 0
+  m_Name: Command_recipeInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &488590339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488590338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3095d9aa70a39ca45be3bd102e88230a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeScriptinput_command: {fileID: 668218884}
+  command_Recipe: {fileID: 619826497}
+  recipe: {fileID: 308926728}
+  starting_command_Count: 0
+  is_Commanding: 0
+  is_Starting_Command: 0
+--- !u!4 &488590340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488590338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 788.258, y: 1016.0746, z: 5.706998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &492751137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2871,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &668218884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 668218886}
+  - component: {fileID: 668218885}
+  m_Layer: 0
+  m_Name: Commandboard_recipe_Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &668218885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668218884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3529abef3df181444bfbf39222885198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  command_Recipe: {fileID: 619826497}
+  recipe: {fileID: 308926728}
+  Command_Recipt_Script: {fileID: 488590338}
+--- !u!4 &668218886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668218884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 512, y: 384, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670769761
 GameObject:

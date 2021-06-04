@@ -31,7 +31,7 @@ public class PratcieImageChange : MonoBehaviour
         if (GameManager.instance.GetStage2Clear() == true)
         {
             DragonButton.GetComponent<Image>().sprite = DragonBackGround;
-            DragonButton.GetComponent<Button>().enabled = false;
+            DragonButton.GetComponent<Button>().enabled = true;
         }
         else if (GameManager.instance.GetStage2Clear() == false)
         {

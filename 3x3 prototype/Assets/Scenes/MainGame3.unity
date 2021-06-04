@@ -1468,6 +1468,7 @@ MonoBehaviour:
   dataGameManager: {fileID: 1973789026}
   maingame_inventory: {fileID: 1057413623}
   command_manager: {fileID: 1667713502}
+  commandboard_recipe_Input: {fileID: 1518430181}
   Ingredient_Count: 0
   making_Count: 0
   hiddentmaking_Count: 0
@@ -8222,6 +8223,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501318843}
   m_CullTransparentMesh: 0
+--- !u!1 &1518430181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1518430183}
+  - component: {fileID: 1518430182}
+  m_Layer: 0
+  m_Name: Command_recipeInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1518430182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518430181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3095d9aa70a39ca45be3bd102e88230a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeScriptinput_command: {fileID: 1520489819}
+  command_Recipe: {fileID: 619826497}
+  recipe: {fileID: 308926728}
+  starting_command_Count: 0
+  is_Commanding: 0
+  is_Starting_Command: 0
+--- !u!4 &1518430183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518430181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 788.258, y: 1016.0746, z: 5.706998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1520489819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520489821}
+  - component: {fileID: 1520489820}
+  m_Layer: 0
+  m_Name: Commandboard_recipe_Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1520489820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520489819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3529abef3df181444bfbf39222885198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  command_Recipe: {fileID: 619826497}
+  recipe: {fileID: 308926728}
+  Command_Recipt_Script: {fileID: 1518430181}
+--- !u!4 &1520489821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520489819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 512, y: 384, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523978719
 GameObject:
   m_ObjectHideFlags: 0
