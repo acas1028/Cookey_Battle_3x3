@@ -3634,7 +3634,7 @@ MonoBehaviour:
   DragonButton: {fileID: 1915461278}
   slimeBackGround: {fileID: 21300000, guid: 84f4d4adfcbb906449de849511a6a9cd, type: 3}
   DragonBackGround: {fileID: 21300000, guid: 2f4300b9367f71b44bca49b517c79eea, type: 3}
-  noneBackGround: {fileID: 21300000, guid: cdd168665af193d48a89e0d7464e4cf7, type: 3}
+  noneBackGround: {fileID: 21300000, guid: cd8716469259d71428316ad529f5b76a, type: 3}
 --- !u!1 &1092122280
 GameObject:
   m_ObjectHideFlags: 0

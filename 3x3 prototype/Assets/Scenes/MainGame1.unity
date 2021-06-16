@@ -912,7 +912,9 @@ MonoBehaviour:
   recipeScriptinput_command: {fileID: 1850385286}
   command_Recipe: {fileID: 619826497}
   recipe: {fileID: 308926728}
+  starting_command_Count: 0
   is_Commanding: 0
+  is_Starting_Command: 0
 --- !u!4 &215123647
 Transform:
   m_ObjectHideFlags: 0

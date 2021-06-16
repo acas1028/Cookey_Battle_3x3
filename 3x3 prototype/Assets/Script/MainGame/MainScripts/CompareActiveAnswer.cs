@@ -1052,7 +1052,7 @@ public class CompareActiveAnswer : MonoBehaviour
                             Making_ingredient();
                         }
 
-                        else if (isHiddentCount == 2)
+                        else if (isHiddentCount == 1)
                         {
                             HiddentMaking_Ingredient();
                             isHiddentCount = 0;
