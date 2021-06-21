@@ -20,7 +20,7 @@ public class TrueEndingCreditFaderController : MonoBehaviour
 	{
 		if (this.gameObject.tag == "Credit_Text")
 		{
-			Text sr = this.gameObject.GetComponent<Text>();
+			Image sr = this.gameObject.GetComponent<Image>();
 			Color tempColor = sr.color;
 			while (tempColor.a < 1f)
 			{
@@ -58,7 +58,7 @@ public class TrueEndingCreditFaderController : MonoBehaviour
 	{
 		if (this.gameObject.tag == "Credit_Text")
 		{
-			Text sr = this.gameObject.GetComponent<Text>();
+			Image sr = this.gameObject.GetComponent<Image>();
 
 			Color tempColor = sr.color;
 			while (tempColor.a > 0f)
