@@ -1052,7 +1052,7 @@ public class CompareActiveAnswer : MonoBehaviour
                             Making_ingredient();
                         }
 
-                        else if (isHiddentCount == 1)
+                        else if (isHiddentCount == 2)
                         {
                             HiddentMaking_Ingredient();
                             isHiddentCount = 0;
@@ -1131,7 +1131,7 @@ public class CompareActiveAnswer : MonoBehaviour
                             Making_ingredient();
                         }
 
-                        else if (isHiddentCount == 1)
+                        else if (isHiddentCount == 2)
                         {
                             HiddentMaking_Ingredient();
                             isHiddentCount = 0;
@@ -3064,7 +3064,6 @@ public class CompareActiveAnswer : MonoBehaviour
                         CommandComparison.GetComponent<ComandComparison>().CommandComparisonCount = 0;
                         Making_ingredient();
                         isInventoryOk = true;
-                        timer.GetComponent<Timer>().timer = 0;
                         command_All_Count++;
                         ingameStep++;
                         command_manager.GetComponent<InputCommand>().clear_command = false;
